@@ -1,0 +1,124 @@
+=====================================================================
+ JARVIS AGENCE - 12 AGENTS, MEMOIRE ET AUTOPILOTE
+=====================================================================
+
+L'ORGANIGRAMME
+                              TOI (le patron)
+                                    |
+                     JARVIS (directeur, CLAUDE.md)
+                                    |
+   +-------------+-----------+-------------------+----------------+
+   | DIRECTION   | PILOTAGE  | CONCEPTION        | STRATEGIE      |
+   | secretaire  | chef-de-  | analyste          | controleur-    |
+   | (memoire,   | projet    | architecte        |   gestion      |
+   |  condense)  |           | designer-ux       | veille-marche  |
+   |             |           | tech-lead         | product-manager|
+   |             |           | testeur           | marketing-vente|
+   |             |           | livraison         |                |
+   +-------------+-----------+-------------------+----------------+
+
+COMMENT CA REMONTE JUSQU'A TOI (sans saturer la memoire)
+- Chaque agent rend a Jarvis 10 lignes maximum. Les details restent
+  dans les fichiers docs/.
+- Le secretaire condense tout dans docs/memoire/synthese.md (15 lignes).
+- Jarvis te rend toujours 3 blocs : Fait / A valider / Prochaine etape.
+
+---------------------------------------------------------------------
+INSTALLATION - NOUVEAU PROJET (le plus simple)
+---------------------------------------------------------------------
+Windows (PowerShell) :
+  Expand-Archive "$HOME\Downloads\jarvis-agence.zip" -DestinationPath "$HOME\jarvis-agence"
+  cd $HOME\jarvis-agence
+  git init
+  git add -A
+  git commit -m "Installation de Jarvis agence"
+  claude
+
+Linux (terminal) :
+  unzip ~/Telechargements/jarvis-agence.zip -d ~/jarvis-agence
+  cd ~/jarvis-agence
+  git init && git add -A && git commit -m "Installation de Jarvis agence"
+  claude
+
+  (Si le zip est dans ~/Downloads, remplace Telechargements par Downloads.)
+
+---------------------------------------------------------------------
+INSTALLATION - DANS UN PROJET QUI A DEJA JARVIS (ex. FarmTech)
+---------------------------------------------------------------------
+1. Sauvegarde :  git add -A && git commit -m "Avant Jarvis agence"
+2. Decompresse le zip dans un dossier A COTE du projet
+   (ex. C:\Users\df\jarvis-agence ou ~/jarvis-agence), pas dedans.
+3. Lance  claude  dans ton projet et colle ce message
+   (remplace le chemin par le tien) :
+
+   Le kit Jarvis agence est dans le dossier C:\Users\df\jarvis-agence.
+   Integre-le dans ce projet sans rien perdre :
+   - copie les dossiers .claude/agents, .claude/skills, .claude/commands,
+     .claude/hooks et docs/memoire, docs/strategie (sans ecraser un
+     fichier existant : s'il existe deja, fusionne les deux) ;
+   - fusionne .claude/settings.json et .gitignore ;
+   - fusionne CLAUDE.md : garde toutes les infos propres a ce projet
+     (stack, profils, langues, regles) et ajoute l'equipe de 12 agents,
+     les regles de memoire, le mode autopilote et le format de rapport ;
+   - l'ancien agent avant-vente : garde-le seulement pour le cahier
+     des charges ou supprime-le si l'analyste fait le meme travail
+     (demande-moi avant de supprimer).
+   Pas de git push. A la fin : liste des fichiers modifies + resume en 5 lignes.
+
+4. Quitte (/exit) et relance  claude  : le hook de l'autopilote se
+   charge au demarrage.
+
+---------------------------------------------------------------------
+PREMIER REGLAGE (5 minutes, une seule fois)
+---------------------------------------------------------------------
+1. Ouvre docs/strategie/couts.md et remplis tes vrais chiffres.
+   Sans eux, le controleur de gestion refusera de calculer : il
+   n'invente rien. C'est voulu.
+2. Dans Claude Code, tape :
+   Jarvis, le projet en cours est [ton projet, en 2 phrases]. Fais
+   remplir conventions.md par l'architecte en lisant le code.
+
+---------------------------------------------------------------------
+UTILISATION AU QUOTIDIEN
+---------------------------------------------------------------------
+MODE NORMAL (tu parles a Jarvis) :
+  "Jarvis, ajoute une page de contact."
+  "Jarvis, fais une veille sur les concurrents de FarmTech."
+  "Jarvis, quel prix pour une appli de gestion simple ?"
+
+MODE AUTOPILOTE (les agents s'enchainent seuls) :
+  1. Ecris tes taches dans docs/memoire/taches.md, une par ligne :
+       - [ ] Ajouter la page meteo avec les previsions sur 7 jours
+       - [ ] Ajouter les tests de la page meteo
+       - [ ] [strategie] Calculer notre cout de revient journalier
+  2. Commit de securite :  git add -A && git commit -m "Avant autopilote"
+  3. Dans Claude Code :  /autopilote
+  4. Tu le laisses travailler. Il s'arrete seul quand tout est fait,
+     ou apres 20 relances (securite anti-boucle).
+     Arret d'urgence : Echap, puis /stop-autopilote
+  5. A la fin : lis le rapport, traite les taches [!], teste, puis
+     git push toi-meme.
+     Resultat qui ne te plait pas :  git restore .   puis   git clean -fd src
+
+LES COMMANDES
+  /autopilote        lance l'enchainement automatique
+  /stop-autopilote   arret d'urgence
+  /le-point          le point du patron en 5 lignes
+  /condenser         le secretaire resume tout, puis tu tapes /compact
+  /compact           compresse la conversation
+  /clear             nouvelle conversation (changer de sujet)
+  /exit              quitter
+
+LES 3 REGLES DE MEMOIRE A RETENIR
+  1. Un sujet = une conversation  ->  /clear entre deux sujets
+  2. Ce qui compte est dans docs/memoire/, pas dans la conversation
+  3. Conversation longue  ->  /condenser puis /compact
+
+CE QU'AUCUN AGENT NE FAIT SANS TOI (meme en autopilote)
+  git push, deploiement, suppression, envoi ou publication,
+  nouvelle bibliotheque, depense d'argent.
+  -> la tache est marquee [!] et tu la valides a la fin.
+
+OPTION : CODEX (OpenAI) POUR LE TECH-LEAD
+  Si Codex est installe :  claude mcp add codex -- codex mcp-server
+  Le tech-lead pourra lui confier l'ecriture du code et relire.

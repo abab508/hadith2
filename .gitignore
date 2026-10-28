@@ -1,0 +1,5 @@
+.claude/autopilote.on
+.claude/autopilote.compteur
+.env
+node_modules/
+dist/
