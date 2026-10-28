@@ -1,0 +1,135 @@
+{
+  "version": "0.2.0",
+  "miseAJour": "2026-10-28",
+  "langueParDefaut": "ar",
+  "entrees": [
+    {
+      "tag": "ar",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "ar",
+      "nomNatif": "العربية",
+      "nomsTraduits": {
+        "fr": "arabe",
+        "en": "Arabic"
+      },
+      "direction": "rtl",
+      "ecriture": "Arab",
+      "regions": [],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "active",
+      "remplacements": [],
+      "police": {
+        "famille": "Noto Naskh Arabic"
+      }
+    },
+    {
+      "tag": "fr",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "fr",
+      "nomNatif": "français",
+      "nomsTraduits": {
+        "ar": "الفرنسية",
+        "en": "French"
+      },
+      "direction": "ltr",
+      "ecriture": "Latn",
+      "regions": [],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "active",
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Sans"
+      }
+    },
+    {
+      "tag": "en",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "en",
+      "nomNatif": "English",
+      "nomsTraduits": {
+        "ar": "الإنجليزية",
+        "fr": "anglais"
+      },
+      "direction": "ltr",
+      "ecriture": "Latn",
+      "regions": [],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "active",
+      "remplacements": [
+        "fr"
+      ],
+      "police": {
+        "famille": "Noto Sans"
+      }
+    },
+    {
+      "tag": "ur",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "ur",
+      "nomNatif": "اردو",
+      "nomsTraduits": {
+        "fr": "ourdou",
+        "en": "Urdu"
+      },
+      "direction": "rtl",
+      "ecriture": "Arab",
+      "regions": [
+        "PK",
+        "IN"
+      ],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "experimentale",
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Nastaliq Urdu",
+        "secours": [
+          "Noto Naskh Arabic"
+        ]
+      }
+    }
+  ]
+}

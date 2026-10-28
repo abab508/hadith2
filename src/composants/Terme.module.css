@@ -1,0 +1,28 @@
+.terme {
+  position: relative;
+  border-block-end: 1px dotted currentColor;
+  cursor: help;
+}
+
+.infobulle {
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  z-index: 1;
+  display: none;
+  inline-size: max-content;
+  max-inline-size: 18rem;
+  margin-block-start: 0.25rem;
+  padding-block: 0.4rem;
+  padding-inline: 0.6rem;
+  border-radius: 0.3rem;
+  background: var(--texte);
+  color: var(--fond);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.terme:hover .infobulle,
+.terme:focus .infobulle {
+  display: block;
+}
