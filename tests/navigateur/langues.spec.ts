@@ -12,7 +12,8 @@ test("passage ar → fr → ur depuis le sélecteur", async ({ page }) => {
   await page.getByRole("link", { name: "français" }).click();
   await expect(page).toHaveURL(/\/fr$/);
   await expect(page.locator("html")).toHaveAttribute("dir", "ltr");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("HadithVerify AI");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Milaghaiba");
+  await expect(page).toHaveTitle("Milaghaiba");
 
   await page.getByRole("link", { name: "اردو" }).click();
   await expect(page).toHaveURL(/\/ur$/);

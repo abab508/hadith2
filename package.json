@@ -1,8 +1,8 @@
 {
-  "name": "hadith",
+  "name": "milaghaiba",
   "version": "1.0.0",
   "private": true,
-  "description": "HadithVerify AI — plateforme multilingue de vérification documentaire des hadiths",
+  "description": "Milaghaiba — plateforme multilingue de vérification documentaire des hadiths",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

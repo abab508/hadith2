@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import type { CSSProperties, ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -7,6 +8,12 @@ import { clesManquantes } from "@/i18n/charger";
 import { routing } from "@/i18n/routing";
 import "@/styles/polices.css";
 import "@/styles/global.css";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "accueil" });
+  return { title: t("titre"), description: t("sousTitre") };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
