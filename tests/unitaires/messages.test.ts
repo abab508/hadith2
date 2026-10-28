@@ -2,10 +2,11 @@ import { describe, expect, it } from "vitest";
 import ar from "../../messages/ar.json";
 import en from "../../messages/en.json";
 import fr from "../../messages/fr.json";
+import ur from "../../messages/ur.json";
 import { languesRoutables } from "@/donnees/catalogue";
 import { cles, fusionnerMessages, type Messages } from "@/i18n/messages";
 
-const fichiers: Record<string, Messages> = { ar, fr, en };
+const fichiers: Record<string, Messages> = { ar, fr, en, ur };
 
 describe("messages de l'interface", () => {
   it("existent pour chaque langue routable", () => {

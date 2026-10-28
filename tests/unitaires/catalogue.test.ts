@@ -10,7 +10,7 @@ describe("catalogue des langues", () => {
   });
 
   it("ne rend routables que les langues actives avec interface", () => {
-    expect(languesRoutables()).toEqual(["ar", "fr", "en"]);
+    expect(languesRoutables()).toEqual(["ar", "fr", "en", "ur"]);
   });
 
   it("construit la chaîne de repli [tag, ...remplacements, ar]", () => {

@@ -1,14 +1,21 @@
 {
-  "_meta": { "origine": "ia", "relu": false },
+  "_meta": {
+    "origine": "ia",
+    "relu": false
+  },
   "accueil": {
     "titre": "HadithVerify AI",
     "sousTitre": "Documentary verification platform for hadiths — under construction",
-    "etat": "First preview version: no content yet."
+    "etat": "First preview version: no content yet.",
+    "exempleTerme": "Example term:"
   },
   "selecteurLangue": {
     "titre": "Language"
   },
   "commun": {
     "repliSignale": "Some parts are not translated yet."
+  },
+  "terme": {
+    "aValider": "awaiting specialist validation"
   }
 }

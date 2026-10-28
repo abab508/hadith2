@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "miseAJour": "2026-10-28",
   "langueParDefaut": "ar",
   "entrees": [
@@ -9,15 +9,28 @@
       "type": "langue",
       "langueDeBase": "ar",
       "nomNatif": "العربية",
-      "nomsTraduits": { "fr": "arabe", "en": "Arabic" },
+      "nomsTraduits": {
+        "fr": "arabe",
+        "en": "Arabic"
+      },
       "direction": "rtl",
       "ecriture": "Arab",
       "regions": [],
-      "niveaux": { "identifiee": true, "affichable": true, "interface": true, "recherche": false,
-                   "traductionAuto": false, "contenuDocumentaire": false, "contenuVerifie": false, "validationHumaine": false },
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
       "statut": "active",
       "remplacements": [],
-      "police": { "famille": "Noto Naskh Arabic" }
+      "police": {
+        "famille": "Noto Naskh Arabic"
+      }
     },
     {
       "tag": "fr",
@@ -25,15 +38,30 @@
       "type": "langue",
       "langueDeBase": "fr",
       "nomNatif": "français",
-      "nomsTraduits": { "ar": "الفرنسية", "en": "French" },
+      "nomsTraduits": {
+        "ar": "الفرنسية",
+        "en": "French"
+      },
       "direction": "ltr",
       "ecriture": "Latn",
       "regions": [],
-      "niveaux": { "identifiee": true, "affichable": true, "interface": true, "recherche": false,
-                   "traductionAuto": false, "contenuDocumentaire": false, "contenuVerifie": false, "validationHumaine": false },
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
       "statut": "active",
-      "remplacements": ["en"],
-      "police": { "famille": "Noto Sans" }
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Sans"
+      }
     },
     {
       "tag": "en",
@@ -41,15 +69,30 @@
       "type": "langue",
       "langueDeBase": "en",
       "nomNatif": "English",
-      "nomsTraduits": { "ar": "الإنجليزية", "fr": "anglais" },
+      "nomsTraduits": {
+        "ar": "الإنجليزية",
+        "fr": "anglais"
+      },
       "direction": "ltr",
       "ecriture": "Latn",
       "regions": [],
-      "niveaux": { "identifiee": true, "affichable": true, "interface": true, "recherche": false,
-                   "traductionAuto": false, "contenuDocumentaire": false, "contenuVerifie": false, "validationHumaine": false },
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
       "statut": "active",
-      "remplacements": ["fr"],
-      "police": { "famille": "Noto Sans" }
+      "remplacements": [
+        "fr"
+      ],
+      "police": {
+        "famille": "Noto Sans"
+      }
     },
     {
       "tag": "ur",
@@ -57,16 +100,36 @@
       "type": "langue",
       "langueDeBase": "ur",
       "nomNatif": "اردو",
-      "nomsTraduits": { "fr": "ourdou", "en": "Urdu" },
+      "nomsTraduits": {
+        "fr": "ourdou",
+        "en": "Urdu"
+      },
       "direction": "rtl",
       "ecriture": "Arab",
-      "regions": ["PK", "IN"],
-      "niveaux": { "identifiee": true, "affichable": false, "interface": false, "recherche": false,
-                   "traductionAuto": false, "contenuDocumentaire": false, "contenuVerifie": false, "validationHumaine": false },
+      "regions": [
+        "PK",
+        "IN"
+      ],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
       "statut": "experimentale",
-      "remplacements": ["en"],
-      "police": { "famille": "Noto Nastaliq Urdu", "secours": ["Noto Naskh Arabic"] },
-      "notes": "Non routable tant que la police Nastaliq n'est pas validée et installée."
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Nastaliq Urdu",
+        "secours": [
+          "Noto Naskh Arabic"
+        ]
+      }
     }
   ]
 }

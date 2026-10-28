@@ -56,3 +56,12 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+
+.repli {
+  margin: 0;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  background: var(--accent);
+  color: var(--fond);
+  text-align: center;
+}

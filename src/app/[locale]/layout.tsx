@@ -1,9 +1,11 @@
 import type { CSSProperties, ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { entree } from "@/donnees/catalogue";
+import { clesManquantes } from "@/i18n/charger";
 import { routing } from "@/i18n/routing";
+import "@/styles/polices.css";
 import "@/styles/global.css";
 
 export function generateStaticParams() {
@@ -23,12 +25,20 @@ export default async function Layout({
     notFound();
   }
   setRequestLocale(locale);
+  const t = await getTranslations("commun");
+  const repli = (await clesManquantes(locale)).length > 0;
 
-  const polices = [langue.police.famille, ...(langue.police.secours ?? [])].map((p) => `"${p}"`);
+  // Police de la langue, ses secours, puis Noto Sans pour les passages latins.
+  const polices = [langue.police.famille, ...(langue.police.secours ?? []), "Noto Sans"].map((p) => `"${p}"`);
 
   return (
     <html lang={locale} dir={langue.direction}>
-      <body style={{ "--police": [...polices, "system-ui", "sans-serif"].join(", ") } as CSSProperties}>
+      <body style={{ "--police": [...new Set(polices), "system-ui", "sans-serif"].join(", ") } as CSSProperties}>
+        {repli && (
+          <p className="repli" role="status">
+            {t("repliSignale")}
+          </p>
+        )}
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

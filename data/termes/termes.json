@@ -1,0 +1,62 @@
+{
+  "version": "0.1.0",
+  "miseAJour": "2026-10-28",
+  "normeTranslitteration": "provisoire-v0 (voir regles-translitteration.md)",
+  "domaines": ["authenticite", "chaine", "transmetteurs", "texte-defauts", "critique-sources"],
+  "termes": [
+    {
+      "id": "al-illa",
+      "ar": "العلة",
+      "translitteration": "al-ʿilla",
+      "variantesTranslitteration": ["‘illa"],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Défaut caché du hadith",
+          "explication": "défaut subtil susceptible d’affecter l’évaluation d’une transmission.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Hidden defect",
+          "explication": "a subtle defect that may affect the evaluation of a hadith transmission.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.1.0"
+    },
+    {
+      "id": "hasan",
+      "ar": "حسن",
+      "translitteration": "ḥasan",
+      "variantesTranslitteration": [],
+      "domaine": "authenticite",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Bon",
+          "explication": "Bon / fiable selon la catégorie technique. Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Good / fair",
+          "explication": "Good / fair, according to the technical category. Definition to be provided by a specialist.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.1.0"
+    }
+  ]
+}
