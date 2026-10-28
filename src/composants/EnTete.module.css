@@ -1,0 +1,39 @@
+.entete {
+  background: var(--surface);
+  border-block-end: 1px solid var(--bordure);
+}
+
+.marque {
+  max-inline-size: 70rem;
+  margin-inline: auto;
+  padding-block: 1rem 0;
+  padding-inline: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+}
+
+.lienMarque {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-block-size: 2.75rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.logo {
+  flex: none;
+}
+
+.nom {
+  color: var(--texte);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.slogan {
+  color: var(--discret);
+  font-size: 0.9375rem;
+}

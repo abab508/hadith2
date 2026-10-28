@@ -5,10 +5,45 @@
   },
   "accueil": {
     "titre": "Milaghaiba",
-    "sousTitre": "Documentary verification platform for hadiths — under construction",
-    "etat": "First preview version: no content yet.",
+    "sousTitre": "The original Arabic text first, with its sources, references and translations whose origin is stated.",
+    "etat": "Demonstration version: the data shown are examples awaiting a specialist’s review.",
     "exempleTerme": "Example term:",
-    "glossaire": "Browse the glossary"
+    "glossaire": "Browse the glossary",
+    "recherche": {
+      "titre": "Search for a hadith",
+      "etiquette": "Search text: a passage, a reference or a narrator’s name, in any language",
+      "exemple": "Example: actions are only by intentions",
+      "bouton": "Search",
+      "mode": "Search type"
+    },
+    "modes": {
+      "approximative": "Approximate",
+      "exacte": "Exact",
+      "fragment": "Fragment",
+      "traduction": "From a translation",
+      "translitteration": "Transliteration",
+      "reference": "Reference",
+      "transmetteur": "Narrator",
+      "collection": "Collection"
+    },
+    "sources": {
+      "titre": "Where do the results come from?",
+      "shamila": {
+        "badge": "Full text · terms checked per book",
+        "texte": "Hadith collections, commentaries and narrator biographies, with the edition and source of every text."
+      },
+      "ouverts": {
+        "titre": "Open corpora",
+        "badge": "Open licence",
+        "texte": "Classical Arabic texts, including rare and little-known works."
+      },
+      "reserves": {
+        "titre": "Protected sources",
+        "badge": "Reference only",
+        "texte": "Critical editions and recent translations: the reference and page are given, without copying the text."
+      }
+    },
+    "avertissement": "Milaghaiba is a research and documentation tool. It does not issue religious rulings and does not replace a specialist."
   },
   "selecteurLangue": {
     "titre": "Language",
@@ -41,7 +76,10 @@
     "titre": "Navigation",
     "parametres": "Settings",
     "langues": "Languages and availability",
-    "accueil": "Home"
+    "accueil": "Home",
+    "recherche": "Search",
+    "chaine": "Search by chain",
+    "glossaire": "Glossary"
   },
   "ouverture": {
     "titre": "Open the saved language",
@@ -100,5 +138,159 @@
       "contenuVerifie": "Verified specialist content",
       "validationHumaine": "Human validation available"
     }
+  },
+  "entete": {
+    "slogan": "Hadith research and documentary verification",
+    "accueil": "Milaghaiba home"
+  },
+  "recherche": {
+    "titre": "Results",
+    "requete": "Your search: {requete}",
+    "rapprochee": "Query matched to the Arabic text:",
+    "exemple": "Example data for this demonstration version.",
+    "filtres": {
+      "titre": "Filters",
+      "correspondance": "Match type",
+      "collections": "Collections",
+      "bibliotheques": "Libraries",
+      "peuConnus": "Little-known works"
+    },
+    "correspondance": {
+      "original": "Exact match · original Arabic text",
+      "variante": "Variant · original Arabic text",
+      "reference": "Reference only · rights reserved",
+      "similarite": "Textual similarity only · to be checked"
+    },
+    "traduction": {
+      "publiee": "Published translation · {source}",
+      "ia": "AI-generated translation · unofficial, not checked"
+    },
+    "aucuneTraduction": "No checked translation in your language for this text.",
+    "referenceSeulement": "The text of this edition is not reproduced. Reference: [edition, volume, page].",
+    "premierTransmetteur": "First narrator: {nom}",
+    "bibliotheque": "Library: {nom}",
+    "numero": "{ouvrage}, no. {numero}",
+    "voirRapport": "View the report",
+    "parChaine": "Search by chain",
+    "incertain": {
+      "titre": "Example of an uncertain result",
+      "texte": "A passage from a little-known work that resembles the searched text. A resemblance or a close translation is not enough to establish that it is the same hadith."
+    }
+  },
+  "chaine": {
+    "titre": "Search by transmission chain",
+    "intro": "Choose the hadith, add the narrators you know, then the libraries. The report gathers every route found and each narrator’s card.",
+    "etape1": "1. Select the hadith",
+    "coller": "Or paste a text, a number or an excerpt",
+    "etape2": "2. Specify the chain (optional)",
+    "etape2Aide": "The search finds every route that passes through these narrators, in the order given.",
+    "ajouter": "Add a narrator (Arabic or transliteration)",
+    "retirer": "Remove {nom}",
+    "faibles": "Also show weak routes, with the reason for the weakness",
+    "etape3": "3. Libraries to search",
+    "ouvragesHadith": "Hadith collections in {bibliotheque}",
+    "ouvragesRijal": "Works on narrators (for the cards)",
+    "tousLesAutres": "+ all the other books in the library",
+    "generer": "Generate the report",
+    "resume": "Summary",
+    "acces": {
+      "licenceOuverte": "Open licence",
+      "apiAccord": "API under agreement",
+      "aValider": "Terms of use to be checked",
+      "aVerifier": "Results to be checked"
+    },
+    "hadith": "Hadith",
+    "chaineTitle": "Chain of transmission",
+    "tronc": "Common trunk",
+    "voies": "Paths",
+    "transmetteurs": "narrators",
+    "afficherFaibles": "Show weak narrators",
+    "faible": "Weak",
+    "bibliotheques": "Libraries",
+    "ouvrages": "Works",
+    "resumeOuvrages": "{count, plural, =0 {No works} =1 {# work} other {# works}}",
+    "resumeBibliotheques": "{count, plural, =0 {No libraries} =1 {# library} other {# libraries}}",
+    "voirRapport": "View report",
+    "hadithManquant": "Hadith not found"
+  },
+  "rapport": {
+    "surtitre": "Documentary report",
+    "autreHadith": "Choose another hadith",
+    "texteOriginal": "Original Arabic text · {reference}",
+    "nonRemplace": "The original text is never replaced by a translation.",
+    "statut": "Documented status",
+    "avertissement": "Documentary summary: it does not replace the opinion of a qualified specialist.",
+    "particularite": "Feature of the chain",
+    "isnad": "Chain of transmission",
+    "cliquer": "Click a narrator to see their card.",
+    "legende": {
+      "titre": "Legend",
+      "source": "Source of the hadith",
+      "compagnon": "Companion",
+      "thiqa": "Reliable",
+      "saduq": "Truthful",
+      "daif": "Weak",
+      "compilateur": "Compiler"
+    },
+    "tronc": "Common trunk",
+    "voies": "Paths",
+    "voie": "Route of {reference}",
+    "autresVoies": "Other routes from this narrator: loaded from al-Maktaba al-Shāmila and the other libraries.",
+    "aucunFaible": "No weak narrator in the routes shown. A weak narrator would appear in orange, with the reason in their card.",
+    "fiche": {
+      "titre": "Narrator card",
+      "verdict": "Summary verdict",
+      "jugements": "Critics’ judgements",
+      "reserve": "Reservation",
+      "aucunJugement": "No individual judgement for this link.",
+      "biographie": "Biography",
+      "maitres": "Teachers (in this chain)",
+      "eleves": "Students (in this chain)",
+      "sources": "Biographical sources",
+      "exemple": "Example card: dates and judgements must be confirmed in the sources by a specialist before publication.",
+      "deces": "d. {annee} AH",
+      "decesVers": "d. c. {annee} AH",
+      "decesEntre": "d. between {debut} and {fin} AH",
+      "aucun": "—"
+    },
+    "generation": {
+      "source": "Source of the hadith",
+      "compagnon": "Companion",
+      "tabiiAine": "Senior Successor",
+      "tabii": "Successor",
+      "tabiiCadet": "Junior Successor",
+      "atbaTabiin": "Generation after the Successors",
+      "maitreCompilateur": "Compiler’s teacher",
+      "compilateur": "Compiler"
+    },
+    "sources": "Sources",
+    "actions": {
+      "validation": "Request a human review",
+      "bientot": "Coming soon"
+    },
+    "repli": "Text shown in {langue}.",
+    "titre": "Report: {hadith}",
+    "titreNotFound": "Report not found",
+    "hadithNotFound": "The requested hadith was not found",
+    "traductionIa": "AI translation",
+    "chaineTitle": "Chain of transmission",
+    "transmetteurs": "Narrators",
+    "deces": "Died in {deces}",
+    "jugement": "Judgment",
+    "biographie": "Biography",
+    "verrouille": "Coming soon",
+    "ouvrage": "Work",
+    "reference": "Reference",
+    "bibliotheque": "Library",
+    "acces": {
+      "shamila": "al-Maktaba al-Shāmila",
+      "ouverts": "Open resource",
+      "reserves": "Restricted access",
+      "a-valider": "To validate",
+      "licence-ouverte": "Open license",
+      "api-accord": "Via API",
+      "a-verifier": "To verify"
+    },
+    "avertissementData": "This is an example version with limited data."
   }
 }

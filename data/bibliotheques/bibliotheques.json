@@ -1,0 +1,82 @@
+{
+  "version": "0.1.0",
+  "miseAJour": "2026-10-28",
+  "bibliotheques": [
+    {
+      "id": "shamila",
+      "nom": "al-Maktaba al-Shāmila",
+      "nomAr": "المكتبة الشاملة",
+      "acces": "a-valider",
+      "parDefaut": true,
+      "description": {
+        "ar": "كتب الحديث والشروح وتراجم الرواة والجرح والتعديل. شروط الاستعمال يجب التحقق منها لكل كتاب.",
+        "fr": "Recueils de hadith, commentaires, biographies des transmetteurs et critique. Conditions d’utilisation à vérifier pour chaque ouvrage.",
+        "en": "Hadith collections, commentaries, narrator biographies and criticism. Terms of use must be checked for each book."
+      },
+      "ouvrages": [
+        { "id": "sahih-bukhari", "categorie": "hadith", "nom": "Ṣaḥīḥ al-Bukhārī", "nomAr": "صحيح البخاري" },
+        { "id": "sahih-muslim", "categorie": "hadith", "nom": "Ṣaḥīḥ Muslim", "nomAr": "صحيح مسلم" },
+        { "id": "sunan-abi-dawud", "categorie": "hadith", "nom": "Sunan Abī Dāwūd", "nomAr": "سنن أبي داود" },
+        { "id": "jami-tirmidhi", "categorie": "hadith", "nom": "Jāmiʿ al-Tirmidhī", "nomAr": "جامع الترمذي" },
+        { "id": "sunan-nasai", "categorie": "hadith", "nom": "Sunan al-Nasāʾī", "nomAr": "سنن النسائي" },
+        { "id": "sunan-ibn-majah", "categorie": "hadith", "nom": "Sunan Ibn Mājah", "nomAr": "سنن ابن ماجه" },
+        { "id": "musnad-ahmad", "categorie": "hadith", "nom": "Musnad Aḥmad", "nomAr": "مسند أحمد" },
+        { "id": "muwatta", "categorie": "hadith", "nom": "al-Muwaṭṭaʾ", "nomAr": "الموطأ" },
+        { "id": "sunan-darimi", "categorie": "hadith", "nom": "Sunan al-Dārimī", "nomAr": "سنن الدارمي" },
+        { "id": "sahih-ibn-khuzayma", "categorie": "hadith", "nom": "Ṣaḥīḥ Ibn Khuzayma", "nomAr": "صحيح ابن خزيمة" },
+        { "id": "sahih-ibn-hibban", "categorie": "hadith", "nom": "Ṣaḥīḥ Ibn Ḥibbān", "nomAr": "صحيح ابن حبان" },
+        { "id": "mustadrak", "categorie": "hadith", "nom": "al-Mustadrak", "nomAr": "المستدرك على الصحيحين" },
+        { "id": "sunan-kubra-bayhaqi", "categorie": "hadith", "nom": "al-Sunan al-Kubrā (al-Bayhaqī)", "nomAr": "السنن الكبرى للبيهقي" },
+        { "id": "musannaf-abd-al-razzaq", "categorie": "hadith", "nom": "Muṣannaf ʿAbd al-Razzāq", "nomAr": "مصنف عبد الرزاق" },
+        { "id": "musannaf-ibn-abi-shayba", "categorie": "hadith", "nom": "Muṣannaf Ibn Abī Shayba", "nomAr": "مصنف ابن أبي شيبة" },
+        { "id": "mujam-kabir", "categorie": "hadith", "nom": "al-Muʿjam al-Kabīr (al-Ṭabarānī)", "nomAr": "المعجم الكبير للطبراني" },
+        { "id": "tahdhib-al-kamal", "categorie": "rijal", "nom": "Tahdhīb al-Kamāl (al-Mizzī)", "nomAr": "تهذيب الكمال" },
+        { "id": "taqrib", "categorie": "rijal", "nom": "Taqrīb al-Tahdhīb (Ibn Ḥajar)", "nomAr": "تقريب التهذيب" },
+        { "id": "jarh-tadil", "categorie": "rijal", "nom": "al-Jarḥ wa-l-Taʿdīl (Ibn Abī Ḥātim)", "nomAr": "الجرح والتعديل" },
+        { "id": "tarikh-kabir", "categorie": "rijal", "nom": "al-Tārīkh al-Kabīr (al-Bukhārī)", "nomAr": "التاريخ الكبير" },
+        { "id": "mizan", "categorie": "rijal", "nom": "Mīzān al-Iʿtidāl (al-Dhahabī)", "nomAr": "ميزان الاعتدال" },
+        { "id": "lisan", "categorie": "rijal", "nom": "Lisān al-Mīzān (Ibn Ḥajar)", "nomAr": "لسان الميزان" },
+        { "id": "siyar", "categorie": "rijal", "nom": "Siyar aʿlām al-nubalāʾ (al-Dhahabī)", "nomAr": "سير أعلام النبلاء" }
+      ]
+    },
+    {
+      "id": "openiti",
+      "nom": "OpenITI",
+      "nomAr": "OpenITI",
+      "acces": "licence-ouverte",
+      "parDefaut": true,
+      "description": {
+        "ar": "مدوّنة مفتوحة للنصوص العربية التراثية، ومنها كتب غير مشهورة.",
+        "fr": "Corpus ouvert de textes arabes anciens, dont des ouvrages peu connus.",
+        "en": "An open corpus of classical Arabic texts, including little-known works."
+      },
+      "ouvrages": []
+    },
+    {
+      "id": "partenaire",
+      "nom": "[Bibliothèque partenaire]",
+      "nomAr": "[مكتبة شريكة]",
+      "acces": "api-accord",
+      "parDefaut": false,
+      "description": {
+        "ar": "وصول عبر واجهة برمجية باتفاق. لا يُعرض النص إلا إذا سمح الترخيص.",
+        "fr": "Accès par API selon accord. Le texte n’est affiché que si la licence le permet.",
+        "en": "API access under agreement. Text is shown only when the licence allows it."
+      },
+      "ouvrages": []
+    },
+    {
+      "id": "numerises",
+      "nom": "PDF / manuscrits",
+      "nomAr": "كتب مصوّرة ومخطوطات",
+      "acces": "a-verifier",
+      "parDefaut": false,
+      "description": {
+        "ar": "نص مستخرج آليًا: النتائج موسومة «للتحقق».",
+        "fr": "Texte reconnu automatiquement : les résultats sont marqués « à vérifier ».",
+        "en": "Automatically recognised text: results are marked “to be checked”."
+      },
+      "ouvrages": []
+    }
+  ]
+}

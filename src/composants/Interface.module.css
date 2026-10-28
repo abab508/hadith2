@@ -1,0 +1,188 @@
+/* Éléments communs des pages de recherche. Propriétés logiques uniquement. */
+
+.page {
+  max-inline-size: 78rem;
+  margin-inline: auto;
+  padding-block: 2rem 4rem;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carte {
+  background: var(--surface);
+  border: 1px solid var(--bordure);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-inline-size: 0;
+}
+
+.carte > :is(h2, h3, p) {
+  margin: 0;
+}
+
+.surtitre {
+  margin: 0;
+  color: var(--ocre);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.discret {
+  color: var(--discret);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--neutre-doux);
+  color: var(--texte);
+  inline-size: fit-content;
+}
+
+.badge[data-ton="accent"] {
+  background: var(--accent-doux);
+  color: var(--texte);
+}
+
+.badge[data-ton="ocre"] {
+  background: var(--ocre-doux);
+  color: var(--texte);
+}
+
+.badge[data-ton="info"] {
+  background: var(--info-doux);
+  color: var(--texte);
+}
+
+.badge[data-ton="alerte"] {
+  background: var(--alerte-doux);
+  color: var(--texte);
+}
+
+.badge[data-ton="pointilles"] {
+  background: transparent;
+  border: 2px dashed var(--discret);
+}
+
+.pastille {
+  inline-size: 0.625rem;
+  block-size: 0.625rem;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.bouton,
+.boutonSecondaire {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-block-size: 2.75rem;
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  border-radius: 0.75rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bouton {
+  background: var(--accent);
+  color: var(--sur-accent);
+  border: 1px solid var(--accent);
+}
+
+.boutonSecondaire {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.bouton:disabled,
+.boutonSecondaire:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.traduction {
+  border-inline-start: 3px solid var(--info);
+  padding-inline-start: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.traduction[data-origine="ia"] {
+  border-inline-start-color: var(--ocre);
+}
+
+.traduction > p {
+  margin: 0;
+}
+
+.mention {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.arabeGrand {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.arabeTresGrand {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.avertissement {
+  margin: 0;
+  padding-block: 0.5rem;
+  padding-inline: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--ocre-doux);
+  font-size: 0.875rem;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  font-size: 0.9375rem;
+}
+
+.champ input[type="search"],
+.champ input[type="text"] {
+  min-block-size: 3rem;
+  padding-inline: 0.875rem;
+  border: 1px solid var(--bordure);
+  border-radius: 0.625rem;
+  background: var(--fond);
+  color: var(--texte);
+  font: inherit;
+}

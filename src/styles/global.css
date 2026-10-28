@@ -5,6 +5,17 @@
   --texte: #1d1b16;
   --discret: #6b665c;
   --accent: #1f6f5c;
+  --surface: #ffffff;
+  --bordure: #ddd7c8;
+  --sur-accent: #ffffff;
+  --accent-doux: #e3f0ec;
+  --ocre: #7f5208;
+  --ocre-doux: #f6ebd6;
+  --info: #2a5596;
+  --info-doux: #e8eef8;
+  --alerte: #9a3510;
+  --alerte-doux: #fbe6dd;
+  --neutre-doux: #eceae3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +24,17 @@
     --texte: #ece9e0;
     --discret: #a39d90;
     --accent: #6cc3a8;
+    --surface: #201f18;
+    --bordure: #3d3b31;
+    --sur-accent: #10261f;
+    --accent-doux: #1c3830;
+    --ocre: #e2b465;
+    --ocre-doux: #3a2f1a;
+    --info: #94b8ee;
+    --info-doux: #1d2a3d;
+    --alerte: #f29b76;
+    --alerte-doux: #3d2219;
+    --neutre-doux: #2b2a22;
   }
 }
 
@@ -98,4 +120,20 @@ a {
   background: var(--accent);
   color: var(--fond);
   text-align: center;
+}
+
+/* Blocs en arabe : police arabe, taille confortable, jamais d'inversion manuelle. */
+.texte-arabe {
+  font-family: "Noto Naskh Arabic", serif;
+  line-height: 2;
+  text-align: start;
+}
+
+.visuellement-cache {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

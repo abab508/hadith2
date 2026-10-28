@@ -1,0 +1,412 @@
+{
+  "version": "0.1.0",
+  "miseAJour": "2026-10-28",
+  "statut": "exemple-a-valider",
+  "transmetteurs": [
+    {
+      "id": "prophete",
+      "nomAr": "النبي ﷺ",
+      "nomTranslittere": "al-Nabī ﷺ",
+      "categorie": "source",
+      "deces": "11",
+      "ville": {
+        "ar": "المدينة",
+        "translitteration": "al-Madīna"
+      },
+      "generation": "source",
+      "verdictAr": null,
+      "jugements": [],
+      "biographie": {
+        "ar": "يُنسب الحديث إلى النبي ﷺ، ويتحقق التقرير من السند الذي يصل هذا القول إلى المصنفات.",
+        "fr": "Le hadith est attribué au Prophète ﷺ ; le rapport vérifie la chaîne qui relie cette parole aux recueils.",
+        "en": "The hadith is attributed to the Prophet ﷺ; the report checks the chain that links these words to the collections."
+      },
+      "sources": []
+    },
+    {
+      "id": "umar",
+      "nomAr": "عمر بن الخطاب",
+      "nomTranslittere": "ʿUmar ibn al-Khaṭṭāb",
+      "categorie": "compagnon",
+      "deces": "23",
+      "ville": {
+        "ar": "المدينة",
+        "translitteration": "al-Madīna"
+      },
+      "generation": "compagnon",
+      "verdictAr": "صحابي",
+      "jugements": [],
+      "biographie": {
+        "ar": "الخليفة الثاني. روى هذا الحديث على المنبر كما في رواية البخاري. والصحابة عند أهل الحديث عدول.",
+        "fr": "Deuxième calife. Il a rapporté ce hadith du haut de la chaire, selon la version d’al-Bukhārī. Les spécialistes considèrent les Compagnons comme intègres.",
+        "en": "The second caliph. He reported this hadith from the pulpit, according to al-Bukhārī’s version. Hadith specialists consider the Companions upright."
+      },
+      "sources": [
+        {
+          "ouvrage": "siyar",
+          "reference": "[tome, page]"
+        }
+      ]
+    },
+    {
+      "id": "alqama",
+      "nomAr": "علقمة بن وقاص الليثي",
+      "nomTranslittere": "ʿAlqama ibn Waqqāṣ al-Laythī",
+      "categorie": "thiqa",
+      "deces": "65-86",
+      "ville": {
+        "ar": "المدينة",
+        "translitteration": "al-Madīna"
+      },
+      "generation": "tabiiAine",
+      "verdictAr": "ثقة ثبت",
+      "jugements": [
+        {
+          "critiqueAr": "ابن حجر (تقريب التهذيب)",
+          "critique": "Ibn Ḥajar (Taqrīb al-Tahdhīb)",
+          "verdictAr": "ثقة ثبت",
+          "reserve": false,
+          "explication": {
+            "ar": "ثقة متقن.",
+            "fr": "Fiable et solide.",
+            "en": "Reliable and firm."
+          }
+        }
+      ],
+      "biographie": {
+        "ar": "تابعي مدني، مات في خلافة عبد الملك. [يُستكمل من تهذيب الكمال]",
+        "fr": "Successeur de Médine, mort sous le califat de ʿAbd al-Malik. [À compléter depuis Tahdhīb al-Kamāl.]",
+        "en": "A Successor from Medina who died during the caliphate of ʿAbd al-Malik. [To be completed from Tahdhīb al-Kamāl.]"
+      },
+      "sources": [
+        {
+          "ouvrage": "tahdhib-al-kamal",
+          "reference": "[tome, page]"
+        },
+        {
+          "ouvrage": "taqrib",
+          "reference": "[n°]"
+        }
+      ]
+    },
+    {
+      "id": "taymi",
+      "nomAr": "محمد بن إبراهيم التيمي",
+      "nomTranslittere": "Muḥammad ibn Ibrāhīm al-Taymī",
+      "categorie": "thiqa",
+      "deces": "120",
+      "ville": {
+        "ar": "المدينة",
+        "translitteration": "al-Madīna"
+      },
+      "generation": "tabii",
+      "verdictAr": "ثقة له أفراد",
+      "jugements": [
+        {
+          "critiqueAr": "يحيى بن معين",
+          "critique": "Yaḥyā ibn Maʿīn",
+          "verdictAr": "ثقة",
+          "reserve": false,
+          "explication": {
+            "ar": "ثقة.",
+            "fr": "Fiable.",
+            "en": "Reliable."
+          }
+        },
+        {
+          "critiqueAr": "أبو حاتم الرازي",
+          "critique": "Abū Ḥātim al-Rāzī",
+          "verdictAr": "ثقة",
+          "reserve": false,
+          "explication": {
+            "ar": "ثقة.",
+            "fr": "Fiable.",
+            "en": "Reliable."
+          }
+        },
+        {
+          "critiqueAr": "أحمد بن حنبل",
+          "critique": "Aḥmad ibn Ḥanbal",
+          "verdictAr": "في حديثه شيء، يروي أحاديث مناكير",
+          "reserve": true,
+          "explication": {
+            "ar": "تحفّظ يتعلق ببعض ما انفرد به من الروايات، ولا يمسّ هذا الحديث الذي أخرجه البخاري ومسلم.",
+            "fr": "Réserve sur certaines narrations qu’il est seul à rapporter. Elle ne remet pas en cause ce hadith, retenu par al-Bukhārī et Muslim.",
+            "en": "A reservation about some narrations he alone reported. It does not affect this hadith, which al-Bukhārī and Muslim accepted."
+          }
+        }
+      ],
+      "biographie": {
+        "ar": "تابعي مدني من بني تيم. وثّقه أكثر النقاد، وقال ابن حجر: ثقة له أفراد.",
+        "fr": "Successeur de Médine, de la tribu de Taym. La plupart des critiques le jugent fiable ; Ibn Ḥajar le résume ainsi : fiable, avec quelques narrations qu’il est seul à rapporter.",
+        "en": "A Successor from Medina, of the Taym tribe. Most critics judged him reliable; Ibn Ḥajar sums up: reliable, with some narrations only he reported."
+      },
+      "sources": [
+        {
+          "ouvrage": "tahdhib-al-kamal",
+          "reference": "[tome, page]"
+        },
+        {
+          "ouvrage": "taqrib",
+          "reference": "[n°]"
+        },
+        {
+          "ouvrage": "jarh-tadil",
+          "reference": "[tome, page]"
+        }
+      ]
+    },
+    {
+      "id": "yahya",
+      "nomAr": "يحيى بن سعيد الأنصاري",
+      "nomTranslittere": "Yaḥyā ibn Saʿīd al-Anṣārī",
+      "categorie": "thiqa",
+      "deces": "~144",
+      "ville": {
+        "ar": "المدينة",
+        "translitteration": "al-Madīna"
+      },
+      "generation": "tabiiCadet",
+      "verdictAr": "ثقة ثبت",
+      "jugements": [
+        {
+          "critiqueAr": "ابن حجر (تقريب التهذيب)",
+          "critique": "Ibn Ḥajar (Taqrīb al-Tahdhīb)",
+          "verdictAr": "ثقة ثبت",
+          "reserve": false,
+          "explication": {
+            "ar": "ثقة متقن.",
+            "fr": "Fiable et solide.",
+            "en": "Reliable and firm."
+          }
+        }
+      ],
+      "biographie": {
+        "ar": "قاضي المدينة. عنه انتشر الحديث، فرواه عنه كثيرون.",
+        "fr": "Cadi de Médine. C’est à partir de lui que le hadith se diffuse : de nombreux élèves l’ont reçu de lui.",
+        "en": "Judge of Medina. The hadith spread from him: many students received it from him."
+      },
+      "sources": [
+        {
+          "ouvrage": "tahdhib-al-kamal",
+          "reference": "[tome, page]"
+        },
+        {
+          "ouvrage": "taqrib",
+          "reference": "[n°]"
+        }
+      ]
+    },
+    {
+      "id": "sufyan",
+      "nomAr": "سفيان بن عيينة",
+      "nomTranslittere": "Sufyān ibn ʿUyayna",
+      "categorie": "thiqa",
+      "deces": "198",
+      "ville": {
+        "ar": "مكة",
+        "translitteration": "Makka"
+      },
+      "generation": "atbaTabiin",
+      "verdictAr": "ثقة حافظ فقيه إمام حجة",
+      "jugements": [
+        {
+          "critiqueAr": "ابن حجر (تقريب التهذيب)",
+          "critique": "Ibn Ḥajar (Taqrīb al-Tahdhīb)",
+          "verdictAr": "ثقة حافظ فقيه إمام حجة",
+          "reserve": false,
+          "explication": {
+            "ar": "ثقة حافظ إمام.",
+            "fr": "Fiable, grand mémorisateur, juriste, imam, autorité.",
+            "en": "Reliable, a great memoriser, jurist, imam and authority."
+          }
+        },
+        {
+          "critiqueAr": "ابن حجر (تقريب التهذيب)",
+          "critique": "Ibn Ḥajar (Taqrīb al-Tahdhīb)",
+          "verdictAr": "تغير حفظه بأخرة، وكان ربما دلس لكن عن الثقات",
+          "reserve": true,
+          "explication": {
+            "ar": "نقطة انتباه: تغيّر حفظه في آخر عمره، وتدليسه عن الثقات فقط.",
+            "fr": "Point de vigilance : sa mémoire a changé à la fin de sa vie, et il pratiquait parfois le tadlīs, uniquement à partir de transmetteurs fiables.",
+            "en": "Point of caution: his memory changed late in life, and he sometimes practised tadlīs, only from reliable narrators."
+          }
+        }
+      ],
+      "biographie": {
+        "ar": "محدّث مكة. مثال على راوٍ ثقة تُعرض في بطاقته نقاط الانتباه أيضًا.",
+        "fr": "Savant de La Mecque. Exemple de transmetteur fiable dont la fiche affiche aussi les points de vigilance.",
+        "en": "Scholar of Mecca. An example of a reliable narrator whose card still shows the points of caution."
+      },
+      "sources": [
+        {
+          "ouvrage": "tahdhib-al-kamal",
+          "reference": "[tome, page]"
+        },
+        {
+          "ouvrage": "taqrib",
+          "reference": "[n°]"
+        },
+        {
+          "ouvrage": "siyar",
+          "reference": "[tome, page]"
+        }
+      ]
+    },
+    {
+      "id": "humaydi",
+      "nomAr": "عبد الله بن الزبير الحميدي",
+      "nomTranslittere": "ʿAbd Allāh ibn al-Zubayr al-Ḥumaydī",
+      "categorie": "thiqa",
+      "deces": "219",
+      "ville": {
+        "ar": "مكة",
+        "translitteration": "Makka"
+      },
+      "generation": "maitreCompilateur",
+      "verdictAr": "ثقة حافظ فقيه",
+      "jugements": [
+        {
+          "critiqueAr": "ابن حجر (تقريب التهذيب)",
+          "critique": "Ibn Ḥajar (Taqrīb al-Tahdhīb)",
+          "verdictAr": "ثقة حافظ فقيه، أجل أصحاب ابن عيينة",
+          "reserve": false,
+          "explication": {
+            "ar": "أجلّ أصحاب ابن عيينة.",
+            "fr": "Le plus éminent des élèves d’Ibn ʿUyayna.",
+            "en": "The most eminent of Ibn ʿUyayna’s students."
+          }
+        }
+      ],
+      "biographie": {
+        "ar": "أول شيخ يروي عنه البخاري في صحيحه.",
+        "fr": "Premier maître cité par al-Bukhārī dans son Ṣaḥīḥ.",
+        "en": "The first teacher al-Bukhārī cites in his Ṣaḥīḥ."
+      },
+      "sources": [
+        {
+          "ouvrage": "taqrib",
+          "reference": "[n°]"
+        }
+      ]
+    },
+    {
+      "id": "bukhari",
+      "nomAr": "البخاري",
+      "nomTranslittere": "al-Bukhārī",
+      "categorie": "compilateur",
+      "deces": "256",
+      "ville": {
+        "ar": "بخارى",
+        "translitteration": "Bukhārā"
+      },
+      "generation": "compilateur",
+      "verdictAr": null,
+      "jugements": [],
+      "biographie": {
+        "ar": "صاحب الجامع الصحيح، وهذا الحديث أول ما فيه.",
+        "fr": "Auteur du Ṣaḥīḥ al-Bukhārī, que ce hadith ouvre.",
+        "en": "Author of Ṣaḥīḥ al-Bukhārī, which opens with this hadith."
+      },
+      "sources": []
+    },
+    {
+      "id": "malik",
+      "nomAr": "مالك بن أنس",
+      "nomTranslittere": "Mālik ibn Anas",
+      "categorie": "thiqa",
+      "deces": "179",
+      "ville": {
+        "ar": "المدينة",
+        "translitteration": "al-Madīna"
+      },
+      "generation": "atbaTabiin",
+      "verdictAr": "إمام دار الهجرة، رأس المتقنين",
+      "jugements": [
+        {
+          "critiqueAr": "ابن حجر (تقريب التهذيب)",
+          "critique": "Ibn Ḥajar (Taqrīb al-Tahdhīb)",
+          "verdictAr": "رأس المتقنين وكبير المتثبتين",
+          "reserve": false,
+          "explication": {
+            "ar": "من أشدّ الرواة إتقانًا وتثبّتًا.",
+            "fr": "Parmi les plus rigoureux et les plus prudents.",
+            "en": "Among the most rigorous and careful."
+          }
+        }
+      ],
+      "biographie": {
+        "ar": "صاحب الموطأ وإمام المذهب المالكي.",
+        "fr": "Auteur d’al-Muwaṭṭaʾ, fondateur de l’école malikite.",
+        "en": "Author of al-Muwaṭṭaʾ, founder of the Mālikī school."
+      },
+      "sources": [
+        {
+          "ouvrage": "taqrib",
+          "reference": "[n°]"
+        },
+        {
+          "ouvrage": "siyar",
+          "reference": "[tome, page]"
+        }
+      ]
+    },
+    {
+      "id": "qanabi",
+      "nomAr": "عبد الله بن مسلمة القعنبي",
+      "nomTranslittere": "ʿAbd Allāh ibn Maslama al-Qaʿnabī",
+      "categorie": "thiqa",
+      "deces": "221",
+      "ville": {
+        "ar": "البصرة",
+        "translitteration": "al-Baṣra"
+      },
+      "generation": "maitreCompilateur",
+      "verdictAr": "ثقة عابد",
+      "jugements": [
+        {
+          "critiqueAr": "ابن حجر (تقريب التهذيب)",
+          "critique": "Ibn Ḥajar (Taqrīb al-Tahdhīb)",
+          "verdictAr": "ثقة عابد",
+          "reserve": false,
+          "explication": {
+            "ar": "ثقة عابد.",
+            "fr": "Fiable et dévot.",
+            "en": "Reliable and devout."
+          }
+        }
+      ],
+      "biographie": {
+        "ar": "من كبار رواة الموطأ عن مالك.",
+        "fr": "Grand transmetteur d’al-Muwaṭṭaʾ de Mālik.",
+        "en": "A major transmitter of Mālik’s al-Muwaṭṭaʾ."
+      },
+      "sources": [
+        {
+          "ouvrage": "taqrib",
+          "reference": "[n°]"
+        }
+      ]
+    },
+    {
+      "id": "muslim",
+      "nomAr": "مسلم بن الحجاج",
+      "nomTranslittere": "Muslim ibn al-Ḥajjāj",
+      "categorie": "compilateur",
+      "deces": "261",
+      "ville": {
+        "ar": "نيسابور",
+        "translitteration": "Naysābūr"
+      },
+      "generation": "compilateur",
+      "verdictAr": null,
+      "jugements": [],
+      "biographie": {
+        "ar": "صاحب الصحيح، أخرج هذا الحديث من عدة طرق منها هذا الطريق.",
+        "fr": "Auteur du Ṣaḥīḥ Muslim ; il cite ce hadith par plusieurs voies, dont celle-ci.",
+        "en": "Author of Ṣaḥīḥ Muslim; he cites this hadith through several routes, including this one."
+      },
+      "sources": []
+    }
+  ]
+}

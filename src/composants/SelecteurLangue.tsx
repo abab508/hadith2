@@ -47,6 +47,9 @@ export default function SelecteurLangue() {
         })}
       </ul>
       <ul className={styles.liens} aria-label={navigation("titre")}>
+        <li><Link href="/recherche">{navigation("recherche")}</Link></li>
+        <li><Link href="/chaine">{navigation("chaine")}</Link></li>
+        <li><Link href="/glossaire">{navigation("glossaire")}</Link></li>
         <li><Link href="/parametres">{navigation("parametres")}</Link></li>
         <li><Link href="/langues">{navigation("langues")}</Link></li>
       </ul>

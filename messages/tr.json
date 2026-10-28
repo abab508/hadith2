@@ -5,10 +5,45 @@
   },
   "accueil": {
     "titre": "Milaghaiba",
-    "sousTitre": "Hadislerin belgesel doğrulama platformu — yapım aşamasında",
-    "etat": "İlk önizleme sürümü: henüz içerik yok.",
+    "sousTitre": "Önce özgün Arapça metin; kaynakları, atıfları ve kökeni belirtilmiş çevirileriyle.",
+    "etat": "Tanıtım sürümü: gösterilen veriler bir uzmanın doğrulamasını bekleyen örneklerdir.",
     "exempleTerme": "Terim örneği:",
-    "glossaire": "Sözlüğe göz at"
+    "glossaire": "Sözlüğe göz at",
+    "recherche": {
+      "titre": "Hadis ara",
+      "etiquette": "Arama metni: bir bölüm, bir atıf veya bir ravi adı, herhangi bir dilde",
+      "exemple": "Örnek: ameller niyetlere göredir",
+      "bouton": "Ara",
+      "mode": "Arama türü"
+    },
+    "modes": {
+      "approximative": "Yaklaşık",
+      "exacte": "Tam eşleşme",
+      "fragment": "Parça",
+      "traduction": "Bir çeviriden",
+      "translitteration": "Harf çevirisi",
+      "reference": "Atıf",
+      "transmetteur": "Ravi",
+      "collection": "Eser"
+    },
+    "sources": {
+      "titre": "Sonuçlar nereden geliyor?",
+      "shamila": {
+        "badge": "Tam metin · koşullar eser başına kontrol edilir",
+        "texte": "Hadis eserleri, şerhler ve ravi biyografileri; her metnin baskısı ve kaynağıyla."
+      },
+      "ouverts": {
+        "titre": "Açık derlemler",
+        "badge": "Açık lisans",
+        "texte": "Klasik Arapça metinler; nadir ve az bilinen eserler dahil."
+      },
+      "reserves": {
+        "titre": "Korunan kaynaklar",
+        "badge": "Yalnızca atıf",
+        "texte": "Tahkikli baskılar ve yeni çeviriler: metin kopyalanmadan atıf ve sayfa verilir."
+      }
+    },
+    "avertissement": "Milaghaiba bir arama ve belgeleme aracıdır. Dini hüküm vermez ve bir uzmanın yerini tutmaz."
   },
   "selecteurLangue": {
     "titre": "Dil",
@@ -41,7 +76,10 @@
     "titre": "Gezinme",
     "parametres": "Ayarlar",
     "langues": "Diller ve kullanılabilirlik",
-    "accueil": "Ana sayfa"
+    "accueil": "Ana sayfa",
+    "recherche": "Arama",
+    "chaine": "Senetle arama",
+    "glossaire": "Sözlük"
   },
   "ouverture": {
     "titre": "Kaydedilen dili aç",
@@ -100,5 +138,159 @@
       "contenuVerifie": "Doğrulanmış uzmanlık içeriği",
       "validationHumaine": "İnsan doğrulaması kullanılabilir"
     }
+  },
+  "entete": {
+    "slogan": "Hadis arama ve belgesel doğrulama",
+    "accueil": "Milaghaiba ana sayfası"
+  },
+  "recherche": {
+    "titre": "Sonuçlar",
+    "requete": "Aramanız: {requete}",
+    "rapprochee": "Sorgu Arapça metinle eşleştirildi:",
+    "exemple": "Bu tanıtım sürümü için örnek veriler.",
+    "filtres": {
+      "titre": "Filtreler",
+      "correspondance": "Eşleşme türü",
+      "collections": "Eserler",
+      "bibliotheques": "Kütüphaneler",
+      "peuConnus": "Az bilinen eserler"
+    },
+    "correspondance": {
+      "original": "Tam eşleşme · özgün Arapça metin",
+      "variante": "Varyant · özgün Arapça metin",
+      "reference": "Yalnızca atıf · hakları saklıdır",
+      "similarite": "Yalnızca metin benzerliği · kontrol edilmeli"
+    },
+    "traduction": {
+      "publiee": "Yayımlanmış çeviri · {source}",
+      "ia": "Yapay zekâ çevirisi · resmî değil, kontrol edilmedi"
+    },
+    "aucuneTraduction": "Bu metin için dilinizde doğrulanmış çeviri yok.",
+    "referenceSeulement": "Bu baskının metni aktarılmaz. Atıf: [baskı, cilt, sayfa].",
+    "premierTransmetteur": "İlk ravi: {nom}",
+    "bibliotheque": "Kütüphane: {nom}",
+    "numero": "{ouvrage}, no. {numero}",
+    "voirRapport": "Raporu gör",
+    "parChaine": "Zincire göre ara",
+    "incertain": {
+      "titre": "Belirsiz sonuç örneği",
+      "texte": "Aranan metne benzeyen az bilinen bir eserden bir bölüm. Benzerlik ya da yakın bir çeviri, aynı hadis olduğunu kanıtlamaya yetmez."
+    }
+  },
+  "chaine": {
+    "titre": "Hadis zinciri ile arama yapın",
+    "intro": "Hadisi seçin, bildiğiniz ravileri ekleyin, sonra kütüphaneleri seçin. Rapor bulunan tüm tarikleri ve her ravinin kartını toplar.",
+    "etape1": "1. Hadisi seçin",
+    "coller": "Ya da bir metin, numara veya alıntı yapıştırın",
+    "etape2": "2. Senedi belirtin (isteğe bağlı)",
+    "etape2Aide": "Arama, bu ravilerden verilen sırayla geçen tüm tarikleri bulur.",
+    "ajouter": "Ravi ekleyin (Arapça veya harf çevirisi)",
+    "retirer": "{nom} kaldır",
+    "faibles": "Zayıf tarikleri de zayıflık nedeniyle göster",
+    "etape3": "3. Aranacak kütüphaneler",
+    "ouvragesHadith": "{bibliotheque} içindeki hadis eserleri",
+    "ouvragesRijal": "Ravilerle ilgili eserler (kartlar için)",
+    "tousLesAutres": "+ kütüphanedeki diğer tüm eserler",
+    "generer": "Raporu oluştur",
+    "resume": "Özet",
+    "acces": {
+      "licenceOuverte": "Açık lisans",
+      "apiAccord": "Anlaşmalı API",
+      "aValider": "Kullanım koşulları doğrulanmalı",
+      "aVerifier": "Sonuçlar kontrol edilmeli"
+    },
+    "hadith": "Hadis",
+    "chaineTitle": "Hadis zinciri",
+    "tronc": "Ortak gövde",
+    "voies": "Yollar",
+    "transmetteurs": "ravileri",
+    "afficherFaibles": "Zayıf ravileri göster",
+    "faible": "Zayıf",
+    "bibliotheques": "Kütüphaneler",
+    "ouvrages": "Eserler",
+    "resumeOuvrages": "{count, plural, =0 {Eser yok} =1 {# eser} other {# eser}}",
+    "resumeBibliotheques": "{count, plural, =0 {Kütüphane yok} =1 {# kütüphane} other {# kütüphane}}",
+    "voirRapport": "Raporu görüntüle",
+    "hadithManquant": "Hadis bulunamadı"
+  },
+  "rapport": {
+    "surtitre": "Belgesel rapor",
+    "autreHadith": "Başka bir hadis seç",
+    "texteOriginal": "Özgün Arapça metin · {reference}",
+    "nonRemplace": "Özgün metin asla bir çeviriyle değiştirilmez.",
+    "statut": "Belgelenmiş durum",
+    "avertissement": "Belgesel özet: yetkin bir uzmanın görüşünün yerini tutmaz.",
+    "particularite": "Senedin özelliği",
+    "isnad": "Rivayet zinciri",
+    "cliquer": "Kartını görmek için bir raviye tıklayın.",
+    "legende": {
+      "titre": "Açıklama",
+      "source": "Hadisin kaynağı",
+      "compagnon": "Sahabi",
+      "thiqa": "Güvenilir",
+      "saduq": "Doğru sözlü",
+      "daif": "Zayıf",
+      "compilateur": "Derleyici"
+    },
+    "tronc": "Ortak gövde",
+    "voies": "Yollar",
+    "voie": "{reference} tariki",
+    "autresVoies": "Bu raviden diğer tarikler: el-Mektebetü'ş-Şâmile ve diğer kütüphanelerden yüklenir.",
+    "aucunFaible": "Gösterilen tariklerde zayıf ravi yok. Zayıf bir ravi turuncu görünür ve nedeni kartında yer alırdı.",
+    "fiche": {
+      "titre": "Ravi kartı",
+      "verdict": "Özet hüküm",
+      "jugements": "Münekkitlerin hükümleri",
+      "reserve": "Çekince",
+      "aucunJugement": "Bu halka için ayrı bir hüküm yok.",
+      "biographie": "Biyografi",
+      "maitres": "Hocaları (bu senette)",
+      "eleves": "Talebeleri (bu senette)",
+      "sources": "Biyografi kaynakları",
+      "exemple": "Örnek kart: tarihler ve hükümler yayından önce bir uzman tarafından kaynaklarda doğrulanmalıdır.",
+      "deces": "ö. {annee} H",
+      "decesVers": "ö. yaklaşık {annee} H",
+      "decesEntre": "ö. {debut} ile {fin} H arası",
+      "aucun": "—"
+    },
+    "generation": {
+      "source": "Hadisin kaynağı",
+      "compagnon": "Sahabi",
+      "tabiiAine": "Kıdemli tâbiî",
+      "tabii": "Tâbiî",
+      "tabiiCadet": "Genç tâbiî",
+      "atbaTabiin": "Tebeu't-tâbiîn",
+      "maitreCompilateur": "Derleyicinin hocası",
+      "compilateur": "Derleyici"
+    },
+    "sources": "Kaynaklar",
+    "actions": {
+      "validation": "İnsan doğrulaması iste",
+      "bientot": "Yakında"
+    },
+    "repli": "Metin {langue} dilinde gösteriliyor.",
+    "titre": "Rapor: {hadith}",
+    "titreNotFound": "Rapor bulunamadı",
+    "hadithNotFound": "İstenen hadis bulunamadı",
+    "traductionIa": "AI çevirisi",
+    "chaineTitle": "Hadis zinciri",
+    "transmetteurs": "Ravi",
+    "deces": "{deces} yılında öldü",
+    "jugement": "Kararı",
+    "biographie": "Biyografi",
+    "verrouille": "Yakında gelecek",
+    "ouvrage": "Eser",
+    "reference": "Referans",
+    "bibliotheque": "Kütüphane",
+    "acces": {
+      "shamila": "al-Maktaba al-Shāmila",
+      "ouverts": "Açık kaynak",
+      "reserves": "Sınırlı erişim",
+      "a-valider": "Doğrulanacak",
+      "licence-ouverte": "Açık lisans",
+      "api-accord": "API aracılığıyla",
+      "a-verifier": "Doğrulanacak"
+    },
+    "avertissementData": "Bu, sınırlı verilerle örnek bir sürümdür."
   }
 }

@@ -1,0 +1,79 @@
+{
+  "version": "0.1.0",
+  "miseAJour": "2026-10-28",
+  "statut": "exemple-a-valider",
+  "hadiths": [
+    {
+      "id": "niyyat",
+      "texteAr": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+      "requeteAr": "إنما الأعمال بالنيات",
+      "traductions": [
+        {
+          "langue": "fr",
+          "texte": "« Les actions ne valent que par les intentions, et chacun n’obtiendra que ce qu’il a eu l’intention de faire. »",
+          "origine": "ia",
+          "source": null
+        },
+        {
+          "langue": "en",
+          "texte": "“Actions are only by intentions, and each person will have only what they intended.”",
+          "origine": "ia",
+          "source": null
+        }
+      ],
+      "statutTerme": "hadith-sahih",
+      "statut": {
+        "ar": "أخرجه البخاري ومسلم في الصحيحين.",
+        "fr": "Rapporté par al-Bukhārī et Muslim, dans les deux recueils dits « les deux Ṣaḥīḥ » (الصحيحان).",
+        "en": "Reported by al-Bukhārī and Muslim in the two collections known as “the two Ṣaḥīḥs” (الصحيحان)."
+      },
+      "particularite": {
+        "ar": "حديث غريب في طبقاته الأولى: راوٍ واحد في كل طبقة إلى يحيى بن سعيد، ثم رواه عنه كثيرون.",
+        "fr": "Hadith gharīb (غريب) aux premiers niveaux : un seul transmetteur à chaque génération jusqu’à Yaḥyā ibn Saʿīd, puis de nombreux transmetteurs à partir de lui.",
+        "en": "A gharīb (غريب) hadith in its early tiers: a single narrator at each generation up to Yaḥyā ibn Saʿīd, then many narrators from him."
+      },
+      "occurrences": [
+        {
+          "id": "bukhari-1",
+          "ouvrage": "sahih-bukhari",
+          "numero": "1",
+          "livreAr": "كتاب بدء الوحي",
+          "livre": "Badʾ al-waḥy",
+          "correspondance": "original",
+          "bibliotheque": "shamila",
+          "texteAr": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+          "voie": "bukhari"
+        },
+        {
+          "id": "muslim-1907",
+          "ouvrage": "sahih-muslim",
+          "numero": "1907",
+          "livreAr": "كتاب الإمارة",
+          "livre": "al-Imāra",
+          "correspondance": "variante",
+          "bibliotheque": "shamila",
+          "texteAr": "إِنَّمَا الأَعْمَالُ بِالنِّيَّةِ، وَإِنَّمَا لاِمْرِئٍ مَا نَوَى",
+          "voie": "muslim"
+        },
+        {
+          "id": "abi-dawud-2201",
+          "ouvrage": "sunan-abi-dawud",
+          "numero": "2201",
+          "livreAr": "كتاب الطلاق",
+          "livre": "al-Ṭalāq",
+          "correspondance": "reference",
+          "bibliotheque": "partenaire",
+          "texteAr": null,
+          "voie": null
+        }
+      ],
+      "chaine": {
+        "tronc": ["prophete", "umar", "alqama", "taymi", "yahya"],
+        "voies": [
+          { "id": "bukhari", "ouvrage": "sahih-bukhari", "numero": "1", "transmetteurs": ["sufyan", "humaydi", "bukhari"] },
+          { "id": "muslim", "ouvrage": "sahih-muslim", "numero": "1907", "transmetteurs": ["malik", "qanabi", "muslim"] }
+        ]
+      }
+    }
+  ]
+}

@@ -5,10 +5,45 @@
   },
   "accueil": {
     "titre": "Milaghaiba",
-    "sousTitre": "Plateforme de vérification documentaire des hadiths — en construction",
-    "etat": "Première version de prévisualisation : aucun contenu pour l'instant.",
+    "sousTitre": "Le texte arabe original d’abord, avec ses sources, ses références et des traductions dont l’origine est indiquée.",
+    "etat": "Version de démonstration : les données affichées sont des exemples à valider par un spécialiste.",
     "exempleTerme": "Exemple de terme :",
-    "glossaire": "Consulter le glossaire"
+    "glossaire": "Consulter le glossaire",
+    "recherche": {
+      "titre": "Rechercher un hadith",
+      "etiquette": "Texte à rechercher : un passage, une référence ou un nom de transmetteur, dans n’importe quelle langue",
+      "exemple": "Exemple : les actions ne valent que par les intentions",
+      "bouton": "Rechercher",
+      "mode": "Type de recherche"
+    },
+    "modes": {
+      "approximative": "Approximative",
+      "exacte": "Exacte",
+      "fragment": "Fragment",
+      "traduction": "À partir d’une traduction",
+      "translitteration": "Translittération",
+      "reference": "Référence",
+      "transmetteur": "Transmetteur",
+      "collection": "Recueil"
+    },
+    "sources": {
+      "titre": "D’où viennent les résultats ?",
+      "shamila": {
+        "badge": "Texte intégral · conditions vérifiées par ouvrage",
+        "texte": "Recueils de hadith, commentaires et biographies des transmetteurs, avec l’édition et la source de chaque texte."
+      },
+      "ouverts": {
+        "titre": "Corpus ouverts",
+        "badge": "Licence ouverte",
+        "texte": "Textes arabes anciens, dont des ouvrages rares et peu connus."
+      },
+      "reserves": {
+        "titre": "Sources protégées",
+        "badge": "Référence seulement",
+        "texte": "Éditions critiques et traductions récentes : la référence et la page sont indiquées, sans copier le texte."
+      }
+    },
+    "avertissement": "Milaghaiba est un outil de recherche et de documentation. Il ne donne pas d’avis religieux et ne remplace pas un spécialiste."
   },
   "selecteurLangue": {
     "titre": "Langue",
@@ -41,7 +76,10 @@
     "titre": "Navigation",
     "parametres": "Paramètres",
     "langues": "Langues et disponibilités",
-    "accueil": "Accueil"
+    "accueil": "Accueil",
+    "recherche": "Recherche",
+    "chaine": "Recherche par chaîne",
+    "glossaire": "Glossaire"
   },
   "ouverture": {
     "titre": "Choisir la langue mémorisée",
@@ -100,5 +138,159 @@
       "contenuVerifie": "Contenu spécialisé vérifié",
       "validationHumaine": "Validation humaine disponible"
     }
+  },
+  "entete": {
+    "slogan": "Recherche et vérification documentaire des hadiths",
+    "accueil": "Accueil de Milaghaiba"
+  },
+  "recherche": {
+    "titre": "Résultats",
+    "requete": "Votre recherche : {requete}",
+    "rapprochee": "Requête rapprochée du texte arabe :",
+    "exemple": "Données d’exemple pour cette version de démonstration.",
+    "filtres": {
+      "titre": "Filtres",
+      "correspondance": "Type de correspondance",
+      "collections": "Recueils",
+      "bibliotheques": "Bibliothèques",
+      "peuConnus": "Ouvrages peu connus"
+    },
+    "correspondance": {
+      "original": "Correspondance exacte · texte arabe original",
+      "variante": "Variante · texte arabe original",
+      "reference": "Référence seulement · droits réservés",
+      "similarite": "Simple similarité textuelle · à vérifier"
+    },
+    "traduction": {
+      "publiee": "Traduction publiée · {source}",
+      "ia": "Traduction générée par IA · non officielle, non vérifiée"
+    },
+    "aucuneTraduction": "Aucune traduction vérifiée dans votre langue pour ce texte.",
+    "referenceSeulement": "Le texte de cette édition n’est pas reproduit. Référence : [édition, tome, page].",
+    "premierTransmetteur": "Premier transmetteur : {nom}",
+    "bibliotheque": "Bibliothèque : {nom}",
+    "numero": "{ouvrage}, n° {numero}",
+    "voirRapport": "Voir le rapport",
+    "parChaine": "Rechercher par chaîne",
+    "incertain": {
+      "titre": "Exemple de résultat incertain",
+      "texte": "Passage d’un ouvrage peu connu qui ressemble au texte cherché. Une ressemblance ou une traduction proche ne suffit pas à établir qu’il s’agit du même hadith."
+    }
+  },
+  "chaine": {
+    "titre": "Recherche par chaîne de transmission",
+    "intro": "Choisissez le hadith, indiquez les transmetteurs connus, puis les bibliothèques. Le rapport rassemble toutes les voies trouvées et la fiche de chaque transmetteur.",
+    "etape1": "1. Sélectionner le hadith",
+    "coller": "Ou collez un texte, un numéro ou un extrait",
+    "etape2": "2. Préciser la chaîne (facultatif)",
+    "etape2Aide": "La recherche trouve toutes les voies qui passent par ces transmetteurs, dans l’ordre indiqué.",
+    "ajouter": "Ajouter un transmetteur (arabe ou translittération)",
+    "retirer": "Retirer {nom}",
+    "faibles": "Afficher aussi les voies faibles, avec la raison de la faiblesse",
+    "etape3": "3. Bibliothèques à interroger",
+    "ouvragesHadith": "Recueils de hadith dans {bibliotheque}",
+    "ouvragesRijal": "Ouvrages sur les transmetteurs (pour les fiches)",
+    "tousLesAutres": "+ tous les autres ouvrages de la bibliothèque",
+    "generer": "Générer le rapport",
+    "resume": "Résumé",
+    "acces": {
+      "licenceOuverte": "Licence ouverte",
+      "apiAccord": "API selon accord",
+      "aValider": "Conditions d’utilisation à valider",
+      "aVerifier": "Résultats à vérifier"
+    },
+    "hadith": "Hadith",
+    "chaineTitle": "Chaîne de transmission",
+    "tronc": "Tronc commun",
+    "voies": "Voies",
+    "transmetteurs": "transmetteurs",
+    "afficherFaibles": "Afficher les transmetteurs faibles",
+    "faible": "Faible",
+    "bibliotheques": "Bibliothèques",
+    "ouvrages": "Ouvrages",
+    "resumeOuvrages": "{count, plural, =0 {Aucun ouvrage} =1 {# ouvrage} other {# ouvrages}}",
+    "resumeBibliotheques": "{count, plural, =0 {Aucune bibliothèque} =1 {# bibliothèque} other {# bibliothèques}}",
+    "voirRapport": "Voir le rapport",
+    "hadithManquant": "Hadith non trouvé"
+  },
+  "rapport": {
+    "surtitre": "Rapport documentaire",
+    "autreHadith": "Choisir un autre hadith",
+    "texteOriginal": "Texte arabe original · {reference}",
+    "nonRemplace": "Le texte original n’est jamais remplacé par une traduction.",
+    "statut": "Statut documenté",
+    "avertissement": "Synthèse documentaire : elle ne remplace pas l’avis d’un spécialiste qualifié.",
+    "particularite": "Particularité de la chaîne",
+    "isnad": "Chaîne de transmission",
+    "cliquer": "Cliquez sur un transmetteur pour voir sa fiche.",
+    "legende": {
+      "titre": "Légende",
+      "source": "Source du hadith",
+      "compagnon": "Compagnon",
+      "thiqa": "Fiable",
+      "saduq": "Véridique",
+      "daif": "Faible",
+      "compilateur": "Compilateur"
+    },
+    "tronc": "Tronc commun",
+    "voies": "Voies",
+    "voie": "Voie de {reference}",
+    "autresVoies": "Autres voies depuis ce transmetteur : chargées depuis al-Maktaba al-Shāmila et les autres bibliothèques.",
+    "aucunFaible": "Aucun transmetteur faible dans les voies affichées. Un transmetteur faible apparaîtrait en orange, avec la raison dans sa fiche.",
+    "fiche": {
+      "titre": "Fiche du transmetteur",
+      "verdict": "Verdict de synthèse",
+      "jugements": "Jugements des critiques",
+      "reserve": "Réserve",
+      "aucunJugement": "Pas de jugement individuel pour ce maillon.",
+      "biographie": "Biographie",
+      "maitres": "Maîtres (dans cette chaîne)",
+      "eleves": "Élèves (dans cette chaîne)",
+      "sources": "Sources biographiques",
+      "exemple": "Fiche d’exemple : dates et jugements à confirmer dans les sources par un spécialiste avant publication.",
+      "deces": "m. {annee} H",
+      "decesVers": "m. vers {annee} H",
+      "decesEntre": "m. entre {debut} et {fin} H",
+      "aucun": "—"
+    },
+    "generation": {
+      "source": "Source du hadith",
+      "compagnon": "Compagnon",
+      "tabiiAine": "Successeur aîné",
+      "tabii": "Successeur",
+      "tabiiCadet": "Successeur cadet",
+      "atbaTabiin": "Génération suivant les Successeurs",
+      "maitreCompilateur": "Maître du compilateur",
+      "compilateur": "Compilateur"
+    },
+    "sources": "Sources",
+    "actions": {
+      "validation": "Demander une validation humaine",
+      "bientot": "Bientôt disponible"
+    },
+    "repli": "Texte affiché en {langue}.",
+    "titre": "Rapport : {hadith}",
+    "titreNotFound": "Rapport non trouvé",
+    "hadithNotFound": "Le hadith demandé n'a pas été trouvé",
+    "traductionIa": "Traduction IA",
+    "chaineTitle": "Chaîne de transmission",
+    "transmetteurs": "Fiches des transmetteurs",
+    "deces": "Décédé en {deces}",
+    "jugement": "Jugement",
+    "biographie": "Biographie",
+    "verrouille": "Bientôt disponible",
+    "ouvrage": "Ouvrage",
+    "reference": "Référence",
+    "bibliotheque": "Bibliothèque",
+    "acces": {
+      "shamila": "al-Maktaba al-Shāmila",
+      "ouverts": "Ressource ouverte",
+      "reserves": "Accès réservé",
+      "a-valider": "À valider",
+      "licence-ouverte": "Licence ouverte",
+      "api-accord": "Via API",
+      "a-verifier": "À vérifier"
+    },
+    "avertissementData": "Ceci est une version d'exemple avec des données limitées."
   }
 }

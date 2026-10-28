@@ -5,10 +5,45 @@
   },
   "accueil": {
     "titre": "Milaghaiba",
-    "sousTitre": "Platform pengesahan dokumentari hadis — dalam pembinaan",
-    "etat": "Versi pratonton pertama: belum ada kandungan.",
+    "sousTitre": "Teks Arab asal dahulu, bersama sumber, rujukan dan terjemahan yang dinyatakan asalnya.",
+    "etat": "Versi demonstrasi: data yang dipaparkan ialah contoh yang menunggu pengesahan pakar.",
     "exempleTerme": "Contoh istilah:",
-    "glossaire": "Lihat glosari"
+    "glossaire": "Lihat glosari",
+    "recherche": {
+      "titre": "Cari hadis",
+      "etiquette": "Teks carian: petikan, rujukan atau nama perawi, dalam apa-apa bahasa",
+      "exemple": "Contoh: amalan bergantung pada niat",
+      "bouton": "Cari",
+      "mode": "Jenis carian"
+    },
+    "modes": {
+      "approximative": "Anggaran",
+      "exacte": "Tepat",
+      "fragment": "Petikan",
+      "traduction": "Daripada terjemahan",
+      "translitteration": "Transliterasi",
+      "reference": "Rujukan",
+      "transmetteur": "Perawi",
+      "collection": "Kitab"
+    },
+    "sources": {
+      "titre": "Dari mana datangnya hasil?",
+      "shamila": {
+        "badge": "Teks penuh · syarat disemak bagi setiap kitab",
+        "texte": "Kitab hadis, syarah dan biografi perawi, bersama edisi dan sumber setiap teks."
+      },
+      "ouverts": {
+        "titre": "Korpus terbuka",
+        "badge": "Lesen terbuka",
+        "texte": "Teks Arab klasik, termasuk karya jarang dan kurang dikenali."
+      },
+      "reserves": {
+        "titre": "Sumber berhak cipta",
+        "badge": "Rujukan sahaja",
+        "texte": "Edisi kritis dan terjemahan baharu: rujukan dan halaman dinyatakan tanpa menyalin teks."
+      }
+    },
+    "avertissement": "Milaghaiba ialah alat carian dan dokumentasi. Ia tidak mengeluarkan fatwa dan tidak menggantikan pakar."
   },
   "selecteurLangue": {
     "titre": "Bahasa",
@@ -41,7 +76,10 @@
     "titre": "Navigasi",
     "parametres": "Tetapan",
     "langues": "Bahasa dan ketersediaan",
-    "accueil": "Laman utama"
+    "accueil": "Laman utama",
+    "recherche": "Carian",
+    "chaine": "Carian melalui sanad",
+    "glossaire": "Glosari"
   },
   "ouverture": {
     "titre": "Buka bahasa tersimpan",
@@ -100,5 +138,159 @@
       "contenuVerifie": "Kandungan khusus yang disahkan",
       "validationHumaine": "Pengesahan manusia tersedia"
     }
+  },
+  "entete": {
+    "slogan": "Carian dan pengesahan dokumentari hadis",
+    "accueil": "Laman utama Milaghaiba"
+  },
+  "recherche": {
+    "titre": "Hasil",
+    "requete": "Carian anda: {requete}",
+    "rapprochee": "Pertanyaan dipadankan dengan teks Arab:",
+    "exemple": "Data contoh untuk versi demonstrasi ini.",
+    "filtres": {
+      "titre": "Penapis",
+      "correspondance": "Jenis padanan",
+      "collections": "Kitab",
+      "bibliotheques": "Perpustakaan",
+      "peuConnus": "Karya kurang dikenali"
+    },
+    "correspondance": {
+      "original": "Padanan tepat · teks Arab asal",
+      "variante": "Varian · teks Arab asal",
+      "reference": "Rujukan sahaja · hak cipta terpelihara",
+      "similarite": "Persamaan teks sahaja · perlu disemak"
+    },
+    "traduction": {
+      "publiee": "Terjemahan terbitan · {source}",
+      "ia": "Terjemahan janaan AI · tidak rasmi, belum disemak"
+    },
+    "aucuneTraduction": "Tiada terjemahan disahkan dalam bahasa anda bagi teks ini.",
+    "referenceSeulement": "Teks edisi ini tidak dipaparkan. Rujukan: [edisi, jilid, halaman].",
+    "premierTransmetteur": "Perawi pertama: {nom}",
+    "bibliotheque": "Perpustakaan: {nom}",
+    "numero": "{ouvrage}, no. {numero}",
+    "voirRapport": "Lihat laporan",
+    "parChaine": "Cari mengikut rantai",
+    "incertain": {
+      "titre": "Contoh hasil yang tidak pasti",
+      "texte": "Petikan daripada karya kurang dikenali yang menyerupai teks yang dicari. Persamaan atau terjemahan yang hampir tidak cukup untuk memastikan ia hadis yang sama."
+    }
+  },
+  "chaine": {
+    "titre": "Cari mengikut rantai periwayatan",
+    "intro": "Pilih hadis, tambah perawi yang anda ketahui, kemudian perpustakaan. Laporan mengumpulkan semua jalur yang ditemui dan profil setiap perawi.",
+    "etape1": "1. Pilih hadis",
+    "coller": "Atau tampal teks, nombor atau petikan",
+    "etape2": "2. Nyatakan sanad (pilihan)",
+    "etape2Aide": "Carian menemui semua jalur yang melalui perawi ini, mengikut susunan yang diberi.",
+    "ajouter": "Tambah perawi (Arab atau transliterasi)",
+    "retirer": "Buang {nom}",
+    "faibles": "Tunjukkan juga jalur lemah, bersama sebab kelemahannya",
+    "etape3": "3. Perpustakaan untuk dicari",
+    "ouvragesHadith": "Kitab hadis dalam {bibliotheque}",
+    "ouvragesRijal": "Kitab tentang perawi (untuk profil)",
+    "tousLesAutres": "+ semua kitab lain dalam perpustakaan",
+    "generer": "Jana laporan",
+    "resume": "Ringkasan",
+    "acces": {
+      "licenceOuverte": "Lesen terbuka",
+      "apiAccord": "API mengikut perjanjian",
+      "aValider": "Syarat penggunaan perlu disemak",
+      "aVerifier": "Hasil perlu disemak"
+    },
+    "hadith": "Hadis",
+    "chaineTitle": "Rantai periwayatan",
+    "tronc": "Inti bersama",
+    "voies": "Laluan",
+    "transmetteurs": "perawi",
+    "afficherFaibles": "Tunjukkan perawi lemah",
+    "faible": "Lemah",
+    "bibliotheques": "Perpustakaan",
+    "ouvrages": "Karya",
+    "resumeOuvrages": "{count, plural, =0 {Tiada karya} =1 {# karya} other {# karya}}",
+    "resumeBibliotheques": "{count, plural, =0 {Tiada perpustakaan} =1 {# perpustakaan} other {# perpustakaan}}",
+    "voirRapport": "Lihat laporan",
+    "hadithManquant": "Hadis tidak dijumpai"
+  },
+  "rapport": {
+    "surtitre": "Laporan dokumentari",
+    "autreHadith": "Pilih hadis lain",
+    "texteOriginal": "Teks Arab asal · {reference}",
+    "nonRemplace": "Teks asal tidak pernah digantikan dengan terjemahan.",
+    "statut": "Status didokumentasikan",
+    "avertissement": "Ringkasan dokumentari: tidak menggantikan pendapat pakar yang layak.",
+    "particularite": "Keistimewaan sanad",
+    "isnad": "Rantaian periwayatan",
+    "cliquer": "Klik seorang perawi untuk melihat profilnya.",
+    "legende": {
+      "titre": "Petunjuk",
+      "source": "Sumber hadis",
+      "compagnon": "Sahabat",
+      "thiqa": "Dipercayai",
+      "saduq": "Benar",
+      "daif": "Lemah",
+      "compilateur": "Penyusun"
+    },
+    "tronc": "Inti bersama",
+    "voies": "Laluan",
+    "voie": "Jalur {reference}",
+    "autresVoies": "Jalur lain daripada perawi ini: dimuatkan dari al-Maktaba al-Shāmila dan perpustakaan lain.",
+    "aucunFaible": "Tiada perawi lemah dalam jalur yang dipaparkan. Perawi lemah akan dipaparkan berwarna jingga, dengan sebabnya dalam profilnya.",
+    "fiche": {
+      "titre": "Profil perawi",
+      "verdict": "Ringkasan penilaian",
+      "jugements": "Penilaian para pengkritik",
+      "reserve": "Catatan",
+      "aucunJugement": "Tiada penilaian khusus bagi mata rantai ini.",
+      "biographie": "Biografi",
+      "maitres": "Guru (dalam sanad ini)",
+      "eleves": "Murid (dalam sanad ini)",
+      "sources": "Sumber biografi",
+      "exemple": "Profil contoh: tarikh dan penilaian mesti disahkan dalam sumber oleh pakar sebelum diterbitkan.",
+      "deces": "m. {annee} H",
+      "decesVers": "m. sekitar {annee} H",
+      "decesEntre": "m. antara {debut} dan {fin} H",
+      "aucun": "—"
+    },
+    "generation": {
+      "source": "Sumber hadis",
+      "compagnon": "Sahabat",
+      "tabiiAine": "Tabiin senior",
+      "tabii": "Tabiin",
+      "tabiiCadet": "Tabiin junior",
+      "atbaTabiin": "Tabi‘ al-tabi‘in",
+      "maitreCompilateur": "Guru penyusun",
+      "compilateur": "Penyusun"
+    },
+    "sources": "Sumber",
+    "actions": {
+      "validation": "Minta pengesahan manusia",
+      "bientot": "Akan datang"
+    },
+    "repli": "Teks dipaparkan dalam {langue}.",
+    "titre": "Laporan: {hadith}",
+    "titreNotFound": "Laporan tidak dijumpai",
+    "hadithNotFound": "Hadis yang diminta tidak dijumpai",
+    "traductionIa": "Terjemahan AI",
+    "chaineTitle": "Rantai periwayatan",
+    "transmetteurs": "Perawi",
+    "deces": "Meninggal pada {deces}",
+    "jugement": "Keputusan",
+    "biographie": "Biografi",
+    "verrouille": "Akan datang",
+    "ouvrage": "Karya",
+    "reference": "Rujukan",
+    "bibliotheque": "Perpustakaan",
+    "acces": {
+      "shamila": "al-Maktaba al-Shāmila",
+      "ouverts": "Sumber terbuka",
+      "reserves": "Akses terbatas",
+      "a-valider": "Untuk disahkan",
+      "licence-ouverte": "Lesen terbuka",
+      "api-accord": "Melalui API",
+      "a-verifier": "Untuk disemak"
+    },
+    "avertissementData": "Ini adalah versi contoh dengan data terbatas."
   }
 }

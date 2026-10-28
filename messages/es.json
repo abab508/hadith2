@@ -5,10 +5,45 @@
   },
   "accueil": {
     "titre": "Milaghaiba",
-    "sousTitre": "Plataforma de verificación documental de hadices — en construcción",
-    "etat": "Primera versión de vista previa: aún no hay contenido.",
+    "sousTitre": "Primero el texto árabe original, con sus fuentes, referencias y traducciones de origen indicado.",
+    "etat": "Versión de demostración: los datos mostrados son ejemplos pendientes de validación por un especialista.",
     "exempleTerme": "Ejemplo de término:",
-    "glossaire": "Consultar el glosario"
+    "glossaire": "Consultar el glosario",
+    "recherche": {
+      "titre": "Buscar un hadiz",
+      "etiquette": "Texto de búsqueda: un pasaje, una referencia o el nombre de un transmisor, en cualquier idioma",
+      "exemple": "Ejemplo: las acciones solo valen por las intenciones",
+      "bouton": "Buscar",
+      "mode": "Tipo de búsqueda"
+    },
+    "modes": {
+      "approximative": "Aproximada",
+      "exacte": "Exacta",
+      "fragment": "Fragmento",
+      "traduction": "Desde una traducción",
+      "translitteration": "Transliteración",
+      "reference": "Referencia",
+      "transmetteur": "Transmisor",
+      "collection": "Colección"
+    },
+    "sources": {
+      "titre": "¿De dónde vienen los resultados?",
+      "shamila": {
+        "badge": "Texto completo · condiciones revisadas por obra",
+        "texte": "Colecciones de hadices, comentarios y biografías de transmisores, con la edición y la fuente de cada texto."
+      },
+      "ouverts": {
+        "titre": "Corpus abiertos",
+        "badge": "Licencia abierta",
+        "texte": "Textos árabes clásicos, incluidas obras raras y poco conocidas."
+      },
+      "reserves": {
+        "titre": "Fuentes protegidas",
+        "badge": "Solo referencia",
+        "texte": "Ediciones críticas y traducciones recientes: se indica la referencia y la página, sin copiar el texto."
+      }
+    },
+    "avertissement": "Milaghaiba es una herramienta de búsqueda y documentación. No emite dictámenes religiosos ni sustituye a un especialista."
   },
   "selecteurLangue": {
     "titre": "Idioma",
@@ -41,7 +76,10 @@
     "titre": "Navegación",
     "parametres": "Configuración",
     "langues": "Idiomas y disponibilidad",
-    "accueil": "Inicio"
+    "accueil": "Inicio",
+    "recherche": "Búsqueda",
+    "chaine": "Búsqueda por cadena",
+    "glossaire": "Glosario"
   },
   "ouverture": {
     "titre": "Abrir el idioma guardado",
@@ -100,5 +138,159 @@
       "contenuVerifie": "Contenido especializado verificado",
       "validationHumaine": "Validación humana disponible"
     }
+  },
+  "entete": {
+    "slogan": "Búsqueda y verificación documental de hadices",
+    "accueil": "Inicio de Milaghaiba"
+  },
+  "recherche": {
+    "titre": "Resultados",
+    "requete": "Su búsqueda: {requete}",
+    "rapprochee": "Consulta aproximada al texto árabe:",
+    "exemple": "Datos de ejemplo para esta versión de demostración.",
+    "filtres": {
+      "titre": "Filtros",
+      "correspondance": "Tipo de coincidencia",
+      "collections": "Colecciones",
+      "bibliotheques": "Bibliotecas",
+      "peuConnus": "Obras poco conocidas"
+    },
+    "correspondance": {
+      "original": "Coincidencia exacta · texto árabe original",
+      "variante": "Variante · texto árabe original",
+      "reference": "Solo referencia · derechos reservados",
+      "similarite": "Solo similitud textual · por verificar"
+    },
+    "traduction": {
+      "publiee": "Traducción publicada · {source}",
+      "ia": "Traducción generada por IA · no oficial, no verificada"
+    },
+    "aucuneTraduction": "No hay traducción verificada en su idioma para este texto.",
+    "referenceSeulement": "El texto de esta edición no se reproduce. Referencia: [edición, tomo, página].",
+    "premierTransmetteur": "Primer transmisor: {nom}",
+    "bibliotheque": "Biblioteca: {nom}",
+    "numero": "{ouvrage}, n.º {numero}",
+    "voirRapport": "Ver el informe",
+    "parChaine": "Buscar por cadena",
+    "incertain": {
+      "titre": "Ejemplo de resultado incierto",
+      "texte": "Pasaje de una obra poco conocida que se parece al texto buscado. Un parecido o una traducción cercana no basta para establecer que es el mismo hadiz."
+    }
+  },
+  "chaine": {
+    "titre": "Buscar por cadena de transmisión",
+    "intro": "Elija el hadiz, indique los transmisores conocidos y luego las bibliotecas. El informe reúne todas las vías encontradas y la ficha de cada transmisor.",
+    "etape1": "1. Seleccionar el hadiz",
+    "coller": "O pegue un texto, un número o un fragmento",
+    "etape2": "2. Precisar la cadena (opcional)",
+    "etape2Aide": "La búsqueda encuentra todas las vías que pasan por estos transmisores, en el orden indicado.",
+    "ajouter": "Añadir un transmisor (árabe o transliteración)",
+    "retirer": "Quitar {nom}",
+    "faibles": "Mostrar también las vías débiles, con el motivo de la debilidad",
+    "etape3": "3. Bibliotecas que consultar",
+    "ouvragesHadith": "Colecciones de hadices en {bibliotheque}",
+    "ouvragesRijal": "Obras sobre los transmisores (para las fichas)",
+    "tousLesAutres": "+ todas las demás obras de la biblioteca",
+    "generer": "Generar el informe",
+    "resume": "Resumen",
+    "acces": {
+      "licenceOuverte": "Licencia abierta",
+      "apiAccord": "API según acuerdo",
+      "aValider": "Condiciones de uso por validar",
+      "aVerifier": "Resultados por verificar"
+    },
+    "hadith": "Hadiz",
+    "chaineTitle": "Cadena de transmisión",
+    "tronc": "Tronco común",
+    "voies": "Vías",
+    "transmetteurs": "narradores",
+    "afficherFaibles": "Mostrar narradores débiles",
+    "faible": "Débil",
+    "bibliotheques": "Bibliotecas",
+    "ouvrages": "Obras",
+    "resumeOuvrages": "{count, plural, =0 {Sin obras} =1 {# obra} other {# obras}}",
+    "resumeBibliotheques": "{count, plural, =0 {Sin bibliotecas} =1 {# biblioteca} other {# bibliotecas}}",
+    "voirRapport": "Ver informe",
+    "hadithManquant": "Hadiz no encontrado"
+  },
+  "rapport": {
+    "surtitre": "Informe documental",
+    "autreHadith": "Elegir otro hadiz",
+    "texteOriginal": "Texto árabe original · {reference}",
+    "nonRemplace": "El texto original nunca se sustituye por una traducción.",
+    "statut": "Estado documentado",
+    "avertissement": "Síntesis documental: no sustituye la opinión de un especialista cualificado.",
+    "particularite": "Particularidad de la cadena",
+    "isnad": "Cadena de transmisión",
+    "cliquer": "Pulse un transmisor para ver su ficha.",
+    "legende": {
+      "titre": "Leyenda",
+      "source": "Fuente del hadiz",
+      "compagnon": "Compañero",
+      "thiqa": "Fiable",
+      "saduq": "Veraz",
+      "daif": "Débil",
+      "compilateur": "Compilador"
+    },
+    "tronc": "Tronco común",
+    "voies": "Vías",
+    "voie": "Vía de {reference}",
+    "autresVoies": "Otras vías desde este transmisor: cargadas desde al-Maktaba al-Shāmila y las demás bibliotecas.",
+    "aucunFaible": "Ningún transmisor débil en las vías mostradas. Un transmisor débil aparecería en naranja, con el motivo en su ficha.",
+    "fiche": {
+      "titre": "Ficha del transmisor",
+      "verdict": "Veredicto de síntesis",
+      "jugements": "Juicios de los críticos",
+      "reserve": "Reserva",
+      "aucunJugement": "Sin juicio individual para este eslabón.",
+      "biographie": "Biografía",
+      "maitres": "Maestros (en esta cadena)",
+      "eleves": "Alumnos (en esta cadena)",
+      "sources": "Fuentes biográficas",
+      "exemple": "Ficha de ejemplo: fechas y juicios por confirmar en las fuentes por un especialista antes de publicar.",
+      "deces": "m. {annee} H",
+      "decesVers": "m. hacia {annee} H",
+      "decesEntre": "m. entre {debut} y {fin} H",
+      "aucun": "—"
+    },
+    "generation": {
+      "source": "Fuente del hadiz",
+      "compagnon": "Compañero",
+      "tabiiAine": "Sucesor mayor",
+      "tabii": "Sucesor",
+      "tabiiCadet": "Sucesor menor",
+      "atbaTabiin": "Generación posterior a los sucesores",
+      "maitreCompilateur": "Maestro del compilador",
+      "compilateur": "Compilador"
+    },
+    "sources": "Fuentes",
+    "actions": {
+      "validation": "Solicitar una validación humana",
+      "bientot": "Próximamente"
+    },
+    "repli": "Texto mostrado en {langue}.",
+    "titre": "Informe: {hadith}",
+    "titreNotFound": "Informe no encontrado",
+    "hadithNotFound": "El hadiz solicitado no fue encontrado",
+    "traductionIa": "Traducción IA",
+    "chaineTitle": "Cadena de transmisión",
+    "transmetteurs": "Narradores",
+    "deces": "Murió en {deces}",
+    "jugement": "Veredicto",
+    "biographie": "Biografía",
+    "verrouille": "Próximamente",
+    "ouvrage": "Obra",
+    "reference": "Referencia",
+    "bibliotheque": "Biblioteca",
+    "acces": {
+      "shamila": "al-Maktaba al-Shāmila",
+      "ouverts": "Recurso abierto",
+      "reserves": "Acceso restringido",
+      "a-valider": "Por validar",
+      "licence-ouverte": "Licencia abierta",
+      "api-accord": "Vía API",
+      "a-verifier": "Por verificar"
+    },
+    "avertissementData": "Esta es una versión de ejemplo con datos limitados."
   }
 }
