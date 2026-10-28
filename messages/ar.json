@@ -7,15 +7,29 @@
     "titre": "Milaghaiba",
     "sousTitre": "منصة للتحقق الوثائقي من الأحاديث — قيد الإنشاء",
     "etat": "هذه نسخة تجريبية أولى: لا يوجد أي محتوى بعد.",
-    "exempleTerme": "مثال على مصطلح:"
+    "exempleTerme": "مثال على مصطلح:",
+    "glossaire": "تصفح المسرد"
   },
   "selecteurLangue": {
-    "titre": "اللغة"
+    "titre": "اللغة",
+    "indisponible": "الواجهة غير متاحة بعد"
   },
   "commun": {
     "repliSignale": "بعض الأجزاء لم تُترجم بعد."
   },
   "terme": {
     "aValider": "بانتظار تحقق متخصص"
+  },
+  "glossaire": {
+    "titre": "المسرد",
+    "introduction": "مصطلحات مرجعية: المصطلحات والترجمات بانتظار تحقق متخصص.",
+    "domaines": {
+      "authenticite": "الموثوقية",
+      "chaine": "سلسلة النقل",
+      "transmetteurs": "الرواة",
+      "texteDefauts": "النص والعيوب",
+      "critiqueSources": "نقد المصادر"
+    },
+    "repli": "الترجمة المعروضة باللغة {langue}."
   }
 }

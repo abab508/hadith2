@@ -7,15 +7,29 @@
     "titre": "Milaghaiba",
     "sousTitre": "احادیث کی دستاویزی تصدیق کا پلیٹ فارم — زیرِ تعمیر",
     "etat": "پہلا پیش نظارہ ورژن: ابھی کوئی مواد نہیں۔",
-    "exempleTerme": "اصطلاح کی مثال:"
+    "exempleTerme": "اصطلاح کی مثال:",
+    "glossaire": "فرہنگ دیکھیں"
   },
   "selecteurLangue": {
-    "titre": "زبان"
+    "titre": "زبان",
+    "indisponible": "انٹرفیس ابھی دستیاب نہیں"
   },
   "commun": {
     "repliSignale": "کچھ حصوں کا ابھی ترجمہ نہیں ہوا۔"
   },
   "terme": {
     "aValider": "ماہر کی تصدیق باقی ہے"
+  },
+  "glossaire": {
+    "titre": "فرہنگ",
+    "introduction": "حوالہ جاتی اصطلاحات: اصطلاحات اور تراجم ماہر کی تصدیق کے منتظر ہیں۔",
+    "domaines": {
+      "authenticite": "صحت",
+      "chaine": "سلسلۂ روایت",
+      "transmetteurs": "راوی",
+      "texteDefauts": "متن اور نقائص",
+      "critiqueSources": "ماخذ کی تنقید"
+    },
+    "repli": "ترجمہ {langue} میں دکھایا گیا ہے۔"
   }
 }

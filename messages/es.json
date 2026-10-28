@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "origine": "ia",
+    "relu": false
+  },
+  "accueil": {
+    "titre": "Milaghaiba",
+    "sousTitre": "Plataforma de verificación documental de hadices — en construcción",
+    "etat": "Primera versión de vista previa: aún no hay contenido.",
+    "exempleTerme": "Ejemplo de término:",
+    "glossaire": "Consultar el glosario"
+  },
+  "selecteurLangue": {
+    "titre": "Idioma",
+    "indisponible": "interfaz aún no disponible"
+  },
+  "commun": {
+    "repliSignale": "Algunas partes aún no están traducidas."
+  },
+  "terme": {
+    "aValider": "pendiente de validación por un especialista"
+  },
+  "glossaire": {
+    "titre": "Glosario",
+    "introduction": "Terminología de referencia: los términos y las traducciones están pendientes de validación por un especialista.",
+    "domaines": {
+      "authenticite": "Autenticidad",
+      "chaine": "Cadena de transmisión",
+      "transmetteurs": "Transmisores",
+      "texteDefauts": "Texto y defectos",
+      "critiqueSources": "Crítica de las fuentes"
+    },
+    "repli": "Traducción mostrada en {langue}."
+  }
+}

@@ -7,15 +7,29 @@
     "titre": "Milaghaiba",
     "sousTitre": "Documentary verification platform for hadiths — under construction",
     "etat": "First preview version: no content yet.",
-    "exempleTerme": "Example term:"
+    "exempleTerme": "Example term:",
+    "glossaire": "Browse the glossary"
   },
   "selecteurLangue": {
-    "titre": "Language"
+    "titre": "Language",
+    "indisponible": "interface not yet available"
   },
   "commun": {
     "repliSignale": "Some parts are not translated yet."
   },
   "terme": {
     "aValider": "awaiting specialist validation"
+  },
+  "glossaire": {
+    "titre": "Glossary",
+    "introduction": "Reference terminology: terms and translations await specialist validation.",
+    "domaines": {
+      "authenticite": "Authenticity",
+      "chaine": "Chain of transmission",
+      "transmetteurs": "Transmitters",
+      "texteDefauts": "Text and defects",
+      "critiqueSources": "Source criticism"
+    },
+    "repli": "Translation displayed in {langue}."
   }
 }

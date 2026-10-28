@@ -1,0 +1,53 @@
+.selecteur {
+  max-inline-size: 70rem;
+  margin-inline: auto;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  border-block-end: 1px solid var(--discret);
+  text-align: start;
+}
+
+.titre {
+  margin-block: 0 0.5rem;
+  font-weight: 700;
+}
+
+.langues {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-block: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.langues a,
+.indisponible {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  min-block-size: 2.75rem;
+  padding-block: 0.25rem;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.langues a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration-thickness: 0.15em;
+}
+
+.langues bdi[dir="rtl"] {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.langues a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.25rem;
+}
+
+.indisponible {
+  color: var(--discret);
+}
