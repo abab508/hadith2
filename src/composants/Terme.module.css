@@ -1,6 +1,22 @@
 .terme {
   position: relative;
+  display: inline-block;
+  max-inline-size: 100%;
+  vertical-align: baseline;
+}
+
+.declencheur {
+  min-block-size: 2.75rem;
+  min-inline-size: 2.75rem;
+  max-inline-size: 100%;
+  padding-block: 0.25rem;
+  padding-inline: 0.25rem;
+  border: 0;
   border-block-end: 1px dotted currentColor;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: start;
   cursor: help;
 }
 
@@ -18,10 +34,8 @@
   inset-block-start: 100%;
   inset-inline-start: 0;
   z-index: 1;
-  display: none;
   inline-size: max-content;
-  max-inline-size: 18rem;
-  margin-block-start: 0.25rem;
+  max-inline-size: min(18rem, 100%);
   padding-block: 0.4rem;
   padding-inline: 0.6rem;
   border-radius: 0.3rem;
@@ -31,7 +45,6 @@
   line-height: 1.4;
 }
 
-.terme:hover .infobulle,
-.terme:focus .infobulle {
-  display: block;
+.infobulle[hidden] {
+  display: none;
 }

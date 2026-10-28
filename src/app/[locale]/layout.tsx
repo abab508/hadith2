@@ -42,6 +42,7 @@ export default async function Layout({
   return (
     <html lang={locale} dir={langue.direction}>
       <body style={{ "--police": [...new Set(polices), "system-ui", "sans-serif"].join(", ") } as CSSProperties}>
+        <a className="evitement" href="#contenu">{t("allerAuContenu")}</a>
         {repli && (
           <p className="repli" role="status">
             {t("repliSignale")}

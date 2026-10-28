@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Entree() {
   const t = await getTranslations({ locale: catalogue.langueParDefaut, namespace: "ouverture" });
   return (
-    <main className="accueil">
+    <main id="contenu" tabIndex={-1} className="accueil">
       <h1>{t("titre")}</h1>
       <OuvertureLangue chargement={t("chargement")} />
       <noscript>

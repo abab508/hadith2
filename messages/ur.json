@@ -15,10 +15,15 @@
     "indisponible": "انٹرفیس ابھی دستیاب نہیں"
   },
   "commun": {
+    "allerAuContenu": "مواد پر جائیں",
     "repliSignale": "کچھ حصوں کا ابھی ترجمہ نہیں ہوا۔"
   },
   "terme": {
     "aValider": "ماہر کی تصدیق باقی ہے"
+  },
+  "introuvable": {
+    "titre": "صفحہ نہیں ملا",
+    "description": "مطلوبہ صفحہ نہیں مل سکا۔"
   },
   "glossaire": {
     "titre": "فرہنگ",

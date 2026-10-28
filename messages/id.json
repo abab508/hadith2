@@ -15,10 +15,15 @@
     "indisponible": "antarmuka belum tersedia"
   },
   "commun": {
+    "allerAuContenu": "Langsung ke konten",
     "repliSignale": "Beberapa bagian belum diterjemahkan."
   },
   "terme": {
     "aValider": "menunggu validasi oleh ahli"
+  },
+  "introuvable": {
+    "titre": "Halaman tidak ditemukan",
+    "description": "Halaman yang diminta tidak dapat ditemukan."
   },
   "glossaire": {
     "titre": "Glosarium",

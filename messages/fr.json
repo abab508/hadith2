@@ -15,10 +15,15 @@
     "indisponible": "interface pas encore disponible"
   },
   "commun": {
+    "allerAuContenu": "Aller au contenu",
     "repliSignale": "Certaines parties ne sont pas encore traduites."
   },
   "terme": {
     "aValider": "à valider par un spécialiste"
+  },
+  "introuvable": {
+    "titre": "Page introuvable",
+    "description": "La page demandée est introuvable."
   },
   "glossaire": {
     "titre": "Glossaire",

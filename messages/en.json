@@ -15,10 +15,15 @@
     "indisponible": "interface not yet available"
   },
   "commun": {
+    "allerAuContenu": "Skip to content",
     "repliSignale": "Some parts are not translated yet."
   },
   "terme": {
     "aValider": "awaiting specialist validation"
+  },
+  "introuvable": {
+    "titre": "Page not found",
+    "description": "The requested page could not be found."
   },
   "glossaire": {
     "titre": "Glossary",

@@ -15,10 +15,15 @@
     "indisponible": "الواجهة غير متاحة بعد"
   },
   "commun": {
+    "allerAuContenu": "انتقل إلى المحتوى",
     "repliSignale": "بعض الأجزاء لم تُترجم بعد."
   },
   "terme": {
     "aValider": "بانتظار تحقق متخصص"
+  },
+  "introuvable": {
+    "titre": "الصفحة غير موجودة",
+    "description": "تعذر العثور على الصفحة المطلوبة."
   },
   "glossaire": {
     "titre": "المسرد",

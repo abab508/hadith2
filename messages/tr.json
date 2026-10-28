@@ -15,10 +15,15 @@
     "indisponible": "arayüz henüz kullanılamıyor"
   },
   "commun": {
+    "allerAuContenu": "İçeriğe geç",
     "repliSignale": "Bazı bölümler henüz çevrilmedi."
   },
   "terme": {
     "aValider": "uzman doğrulaması bekleniyor"
+  },
+  "introuvable": {
+    "titre": "Sayfa bulunamadı",
+    "description": "İstenen sayfa bulunamadı."
   },
   "glossaire": {
     "titre": "Sözlük",

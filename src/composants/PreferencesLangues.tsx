@@ -72,7 +72,7 @@ export default function PreferencesLangues() {
   ));
 
   return (
-    <main className={styles.page}>
+    <main id="contenu" tabIndex={-1} className={styles.page}>
       <p><Link href="/">{navigation("accueil")}</Link>{" / "}{navigation("parametres")}</p>
       <h1>{t("titre")}</h1>
       <p>{t("intro")}</p>

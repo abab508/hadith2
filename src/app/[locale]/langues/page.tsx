@@ -42,7 +42,7 @@ export default async function Langues({ params }: { params: Promise<{ locale: st
   })));
 
   return (
-    <main className={styles.page}>
+    <main id="contenu" tabIndex={-1} className={styles.page}>
       <h1>{t("titre")}</h1>
       <p>{t("introduction")}</p>
       <p className={styles.avertissement}>{t("avertissement")}</p>

@@ -15,10 +15,15 @@
     "indisponible": "antara muka belum tersedia"
   },
   "commun": {
+    "allerAuContenu": "Langkau ke kandungan",
     "repliSignale": "Sesetengah bahagian belum diterjemahkan."
   },
   "terme": {
     "aValider": "menunggu pengesahan oleh pakar"
+  },
+  "introuvable": {
+    "titre": "Halaman tidak ditemukan",
+    "description": "Halaman yang diminta tidak dapat ditemukan."
   },
   "glossaire": {
     "titre": "Glosari",

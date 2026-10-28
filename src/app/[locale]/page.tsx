@@ -10,7 +10,7 @@ export default function Accueil({ params }: { params: Promise<{ locale: string }
   const t = useTranslations();
 
   return (
-    <main className="accueil">
+    <main id="contenu" tabIndex={-1} className="accueil">
       <h1>{t("accueil.titre")}</h1>
       <p>{t("accueil.sousTitre")}</p>
       <p className="etat">{t("accueil.etat")}</p>

@@ -44,7 +44,7 @@ export default async function Glossaire({ params }: { params: Promise<{ locale: 
   }
 
   return (
-    <main className={styles.glossaire}>
+    <main id="contenu" tabIndex={-1} className={styles.glossaire}>
       <h1>{t("titre")}</h1>
       <p>{t("introduction")}</p>
       {Object.entries(clesDomaines).map(([domaine, cle]) => (
