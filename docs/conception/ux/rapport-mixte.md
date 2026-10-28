@@ -36,7 +36,7 @@ Les colonnes `|<` et `>|` à droite indiquent l'alignement de chaque bloc : `<` 
 |    [RÉSUMÉ EN FRANÇAIS]                                                  |  LTR
 |                                                                          |
 | 3. TEXTE DU HADITH                                                       |  LTR
-|    Texte du hadith (المتن — al-matn) : [DÉFINITION DU DICTIONNAIRE].      |  LTR + fragment RTL
+|    Texte du hadith (المتن — al-matn) (i)                                  |  LTR + fragment RTL
 |                                                                          |
 |    +--------------------------------------------------------------+      |
 |    | Texte arabe original                                         |      |  LTR (étiquette)
@@ -51,8 +51,7 @@ Les colonnes `|<` et `>|` à droite indiquent l'alignement de chaque bloc : `<` 
 |                                                                          |
 | 4. CHAÎNE DE TRANSMISSION                                                |  LTR
 |    Continuité de la chaîne de transmission (اتصال السند — ittiṣāl         |  LTR + fragment RTL
-|    al-sanad) : continuité documentée entre les transmetteurs d'une       |
-|    chaîne.                                                               |
+|    al-sanad) (i)                                                         |
 |                                                                          |
 |    Chaîne telle que citée :                                              |  LTR
 |                                        [CHAÎNE EN ARABE, TELLE QUE CITÉE] |  RTL (bloc)
@@ -62,8 +61,7 @@ Les colonnes `|<` et `>|` à droite indiquent l'alignement de chaque bloc : `<` 
 |    2. [NOM DU TRANSMETTEUR EN ARABE] — [TRANSLITTÉRATION]                |
 |                                                                          |
 | 5. TRANSMETTEURS                                                         |  LTR
-|    Critique des transmetteurs (الجرح والتعديل — al-jarḥ wa-l-taʿdīl) :   |  LTR + fragment RTL
-|    discipline qui examine et qualifie la fiabilité des transmetteurs.    |
+|    Critique des transmetteurs (الجرح والتعديل — al-jarḥ wa-l-taʿdīl) (i) |  LTR + fragment RTL
 |                                                                          |
 |    | Transmetteur            | Appréciation citée        | Référence        |  tableau LTR
 |    |-------------------------+---------------------------+------------------|
@@ -71,11 +69,8 @@ Les colonnes `|<` et `>|` à droite indiquent l'alignement de chaque bloc : `<` 
 |    |                         | selon [ÉVALUATEUR]        | t. [N], p. [N]   |
 |                                                                          |
 | 6. DÉFAUTS ÉVENTUELS                                                     |  LTR
-|    Défaut caché du hadith (العلة — al-ʿilla) : défaut subtil susceptible  |  LTR + fragment RTL
-|    d'affecter l'évaluation d'une transmission.                           |
-|    Irrégularité de transmission (الشذوذ — al-shudhūdh) : notion technique |  LTR + fragment RTL
-|    dont l'application dépend de l'analyse comparative des transmissions  |
-|    et de l'appréciation des spécialistes.                                |
+|    Défaut caché du hadith (العلة — al-ʿilla) (i)                          |  LTR + fragment RTL
+|    Irrégularité de transmission (الشذوذ — al-shudhūdh) (i)               |  LTR + fragment RTL
 |    [ANALYSE EN FRANÇAIS, AVEC CITATIONS ARABES COURTES EN FRAGMENTS]     |
 |                                                                          |
 | 7. RÉFÉRENCES                                                            |  LTR
@@ -95,7 +90,7 @@ Les colonnes `|<` et `>|` à droite indiquent l'alignement de chaque bloc : `<` 
 ```
 
 Notes :
-- Chaque section commence par le format complet des termes à leur **première apparition dans la section** (voir `affichage-termes-et-traductions.md`).
+- Chaque section commence par la forme complète des termes à leur **première apparition dans la section** : « Terme (arabe — translittération) », sans définition dans le texte. La définition est dans l'infobulle (i) et la fiche terme (voir `affichage-termes-et-traductions.md`, décision du patron du 2026-10-28).
 - Chaque preuve indique sa langue et sa provenance (02 §8).
 - Une référence en arabe reste en arabe, même dans un rapport français (H3).
 

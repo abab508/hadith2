@@ -14,7 +14,7 @@ toute traduction faite par l'IA est marquée « traduction automatique, à relir
 - [x] Architecte : modèle de données « langue » (code BCP 47, nom natif, direction, écritures, variantes, 8 niveaux de prise en charge, langues de remplacement, identifiant interne pour dialectes sans code officiel)
 - [x] Architecte : modèle de données « terme » du dictionnaire (13 champs de l'exigence 01 §9 + statut de validation + version)
 - [x] Architecte : modèle de données « texte original / traduction » (langue, traducteur, source, édition, droits, provenance : humaine publiée / humaine validée / automatique / automatique relue / original non traduit)
-- [ ] Architecte : structure des dossiers (données de langues, fichiers de traduction versionnés, dictionnaire séparés du code) + décision notée dans decisions.md
+- [x] Architecte : structure des dossiers (données de langues, fichiers de traduction versionnés, dictionnaire séparés du code) + décision notée dans decisions.md
 - [x] Architecte : règles de translittération (norme retenue, graphies alternatives) à soumettre à un spécialiste
 - [x] Designer-ux : parcours du sélecteur de langue (en-tête + paramètres du compte, nom natif + nom traduit, recherche par nom/code, filtres région/écriture, badges de disponibilité)
 - [x] Designer-ux : parcours des 3 préférences indépendantes (interface / rapport / langues de recherche)

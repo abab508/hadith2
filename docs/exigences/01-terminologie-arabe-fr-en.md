@@ -42,6 +42,8 @@ La translittération doit être cohérente dans toute l’application. Utiliser 
 
 ## 3. Catégories d’authenticité
 
+> **Modifié par le patron le 2026-10-28** : le verdict affiché n’a que 2 catégories, ṣaḥīḥ (صحيح) ou ḍaʿīf (ضعيف). Tout hadith non ṣaḥīḥ (ḥasan, mawḍūʿ, non déterminé) est classé ḍaʿīf. La classe d’origine citée par les sources reste enregistrée et visible dans les références. Voir docs/memoire/decisions.md.
+
 Toujours afficher le terme français ou anglais, le terme arabe et la translittération.
 
 | Français | English | Arabe et translittération |

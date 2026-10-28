@@ -2,6 +2,7 @@
 
 > Spécification UX, indépendante de toute technologie. Sources : `docs/exigences/01-terminologie-arabe-fr-en.md` (§2, §3, §7, §8, §9, §10), `docs/exigences/02-plateforme-multilingue.md` (§5, §6, §7, §9) et `docs/exigences/03-couverture-linguistique-mondiale.md` (§9).
 > Les termes arabes, translittérations et définitions cités ici sont **recopiés des exigences**. Tout le reste est un espace réservé entre crochets. Aucune définition savante n'est inventée.
+> **Format des termes mis à jour le 2026-10-28** selon la décision du patron (`docs/memoire/decisions.md`) : dans le texte, un terme s'affiche seulement « Terme (arabe — translittération) ». La définition n'est plus dans le texte courant : elle est dans l'infobulle et la fiche terme. Remplace le format « : définition » de l'exigence 01 §2.
 
 ---
 
@@ -9,50 +10,53 @@
 
 ### A1. Objectif
 
-Un lecteur qui ne lit pas l'arabe comprend chaque terme ; un spécialiste arabophone peut contrôler le terme arabe exact. Le terme arabe et sa translittération sont **toujours accessibles**, partout (interface, rapports, tableaux, notifications, exports PDF, documents de validation).
+Un lecteur qui ne lit pas l'arabe comprend chaque terme ; un spécialiste arabophone peut contrôler le terme arabe exact. Le terme arabe et sa translittération sont **toujours accessibles**, partout (interface, rapports, tableaux, notifications, exports PDF, documents de validation). La définition est **toujours à un geste** (infobulle, fiche terme), jamais dans la phrase.
 
 ### A2. Hypothèses (décisions prises seul, réversibles)
 
 | # | Hypothèse | Raison |
 |---|---|---|
 | H1 | Trois formes d'affichage : **complète** (texte courant), **courte** (rappels dans la même section), **compacte** (tableaux, badges, notifications). | Couvre les cas de 01 §8 avec le moins de variantes. |
-| H2 | En forme compacte, l'arabe reste **visible** à côté du terme quand la place le permet ; sinon il est dans l'infobulle. La définition est toujours dans l'infobulle. | 01 §8 : l'arabe et la translittération doivent rester accessibles. |
+| H2 | En forme compacte, l'arabe reste **visible** à côté du terme quand la place le permet ; sinon il est dans l'infobulle. La définition est toujours dans l'infobulle, quelle que soit la forme. | 01 §8 : l'arabe et la translittération doivent rester accessibles. Décision du patron : pas de définition dans le texte. |
 | H3 | L'infobulle s'ouvre au survol, au focus clavier **et** au toucher (pas seulement au survol). | Mobile et clavier. |
 | H4 | Une « section » = un bloc avec son propre titre (ex. « Chaîne de transmission » dans un rapport, un écran entier dans l'interface). | 01 §1 : « première apparition dans chaque section ». |
-| H5 | Si un terme n'a pas de traduction validée dans la langue choisie : afficher l'arabe + la translittération + « Traduction non validée dans cette langue » ; définition dans la langue de remplacement, signalée. | 02 §6 : pas de traduction automatique de termes spécialisés sans contrôle. |
+| H5 | Si un terme n'a pas de traduction validée dans la langue choisie : afficher l'arabe + la translittération + « Traduction non validée dans cette langue » ; définition (dans l'infobulle) dans la langue de remplacement, signalée. | 02 §6 : pas de traduction automatique de termes spécialisés sans contrôle. |
 
 ### A3. Les trois formes
 
 **1. Forme complète** — première apparition du terme dans chaque section :
 
-Format français (01 §2) :
-> **Terme français (terme arabe — translittération) : définition accessible.**
+Format français (décision du patron du 2026-10-28) :
+> **Terme français (terme arabe — translittération)** (i)
 
-Format anglais (01 §2) :
-> **English term (Arabic term — transliteration): accessible definition.**
+Format anglais :
+> **English term (Arabic term — transliteration)** (i)
 
-Exemples recopiés des exigences :
+Exemple donné par le patron : « Bon (حسن — ḥasan) ».
+
+Exemples (termes, arabe et translittération recopiés de l'exigence 01 §2) :
 ```
-Continuité de la chaîne de transmission (اتصال السند — ittiṣāl al-sanad) :
-continuité documentée entre les transmetteurs d'une chaîne.
+Continuité de la chaîne de transmission (اتصال السند — ittiṣāl al-sanad) (i)
 
-Critique des transmetteurs (الجرح والتعديل — al-jarḥ wa-l-taʿdīl) :
-discipline qui examine et qualifie la fiabilité des transmetteurs.
+Critique des transmetteurs (الجرح والتعديل — al-jarḥ wa-l-taʿdīl) (i)
 
-Hidden defect (‘illa) (العلة — al-ʿilla): a subtle defect that may
-affect the evaluation of a hadith transmission.
+Défaut caché du hadith (العلة — al-ʿilla) (i)
+
+Hidden defect (‘illa) (العلة — al-ʿilla) (i)
 ```
 
-Pour un terme sans définition fournie par les exigences, la maquette utilise :
+Pour un terme quelconque, la maquette utilise :
 ```
-[TERME FR] ([TERME ARABE] — [TRANSLITTÉRATION]) : [DÉFINITION DU DICTIONNAIRE].
+[TERME FR] ([TERME ARABE] — [TRANSLITTÉRATION]) (i)
 ```
+- Pas de « : définition » après la parenthèse. La phrase continue normalement.
+- Le terme est souligné en pointillé et porte l'icône (i) : il ouvre l'infobulle (A4), qui contient la définition.
 
 **2. Forme courte** — apparitions suivantes dans la même section :
 ```
 ... la [TERME FR] (i) de cette chaîne ...
 ```
-Le terme est souligné en pointillé et porte une icône (i) : il ouvre l'infobulle. L'arabe n'est pas répété dans la phrase mais reste à un geste.
+Même style (pointillé + icône (i)). L'arabe n'est pas répété dans la phrase mais reste à un geste.
 
 **3. Forme compacte** — tableaux, badges, notifications, en-têtes étroits :
 ```
@@ -69,7 +73,9 @@ Si la colonne est trop étroite :
 ```
 → l'arabe et la translittération passent dans l'infobulle (H2).
 
-### A4. Infobulle (vue compacte)
+### A4. Infobulle (toutes les formes)
+
+C'est le seul endroit, avec la fiche terme (A5), où la définition apparaît.
 
 ```
         Transmetteur fiable (i)
@@ -136,7 +142,7 @@ Ouverte depuis « Voir la fiche » (panneau latéral sur ordinateur, plein écra
 | Faible (ضعيف — ḍaʿīf) | Weak (ضعيف — ḍaʿīf) |
 | Forgé (موضوع — mawḍūʿ) | Fabricated (موضوع — mawḍūʿ) |
 
-- En anglais, « Good / fair » porte toujours une note visible (pas seulement en infobulle) : « [NOTE DU DICTIONNAIRE : catégorie technique, pas une appréciation générale] » (01 §3).
+- En anglais, « Good / fair » porte toujours une note visible (pas seulement en infobulle) : « [NOTE DU DICTIONNAIRE : catégorie technique, pas une appréciation générale] » (01 §3). Ce n'est pas une définition : c'est une mise en garde exigée par 01 §3, elle reste donc visible.
 - **Non déterminé (غير محدد — ghayr muḥaddad)** n'est **pas** affiché comme une catégorie : autre forme (contour, pas de pastille de couleur de la même série), précédé de « Conclusion de l'application : », avec la phrase « Ce n'est pas une catégorie classique d'authenticité. » (01 §3).
 
 ```
@@ -346,7 +352,7 @@ Pour la dernière : phrase obligatoire « Une ressemblance ou une traduction pro
 ## D. Accessibilité
 
 - Le terme arabe porte la langue arabe et la direction RTL pour être lu correctement ; la translittération porte la langue « arabe en écriture latine » (pour ne pas être lue comme du français).
-- Le terme avec infobulle est un élément focalisable ; l'infobulle est reliée au terme (lue au focus).
+- Le terme avec infobulle est un élément focalisable ; l'infobulle est reliée au terme (lue au focus). Comme la définition n'est plus dans le texte, ce lien est obligatoire pour les lecteurs d'écran.
 - Bandeau IA : lu **avant** le texte traduit.
 - Texte arabe : taille ≥ 18 px, interligne généreux (signes diacritiques non coupés) ; police couvrant l'arabe et la translittération (ʿ, ṣ, ḥ, ḍ, ṭ, ā, ī, ū…).
 - Contraste ≥ 4,5:1, y compris pour le bandeau et les étiquettes.
@@ -354,9 +360,10 @@ Pour la dernière : phrase obligatoire « Une ressemblance ou une traduction pro
 
 ## E. Critères de vérification
 
-1. Dans chaque section d'un rapport, la première apparition d'un terme suit le format « Terme (arabe — translittération) : définition ».
-2. Dans un tableau étroit, l'arabe et la translittération sont atteignables au clavier et au toucher.
-3. « Non déterminé » n'a jamais le même style que les catégories d'authenticité.
-4. Une traduction IA n'apparaît jamais sans son bandeau, ni sans le texte arabe original au-dessus.
-5. Sans traduction vérifiée, le message d'absence s'affiche et aucune traduction IA n'apparaît sans action de l'utilisateur.
-6. La copie et l'export PDF d'une traduction IA gardent la mention.
+1. Dans chaque section d'un rapport, la première apparition d'un terme suit le format « Terme (arabe — translittération) », **sans** « : définition » dans le texte.
+2. La définition de chaque terme est atteignable par l'infobulle (souris, clavier, toucher) et par la fiche terme.
+3. Dans un tableau étroit, l'arabe et la translittération sont atteignables au clavier et au toucher.
+4. « Non déterminé » n'a jamais le même style que les catégories d'authenticité.
+5. Une traduction IA n'apparaît jamais sans son bandeau, ni sans le texte arabe original au-dessus.
+6. Sans traduction vérifiée, le message d'absence s'affiche et aucune traduction IA n'apparaît sans action de l'utilisateur.
+7. La copie et l'export PDF d'une traduction IA gardent la mention.
