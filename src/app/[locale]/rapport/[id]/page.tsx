@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { corpus, transmetteurParId, ouvrageParId, hadithParId, texteDans } from "@/donnees/corpus";
-import { Terme } from "@/composants/Terme";
+import Terme from "@/composants/Terme";
 import ui from "@/composants/Interface.module.css";
 import styles from "./Rapport.module.css";
 
