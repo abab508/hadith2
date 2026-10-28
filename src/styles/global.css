@@ -1,0 +1,58 @@
+/* Propriétés logiques uniquement (docs/memoire/conventions.md). */
+:root {
+  color-scheme: light dark;
+  --fond: #fbfaf7;
+  --texte: #1d1b16;
+  --discret: #6b665c;
+  --accent: #1f6f5c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #16150f;
+    --texte: #ece9e0;
+    --discret: #a39d90;
+    --accent: #6cc3a8;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--police, system-ui, sans-serif);
+  line-height: 1.6;
+}
+
+.accueil {
+  max-inline-size: 40rem;
+  margin-inline: auto;
+  padding-block: 4rem;
+  padding-inline: 1rem;
+  text-align: start;
+}
+
+.etat {
+  color: var(--discret);
+}
+
+.langues {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.langues a {
+  color: var(--accent);
+}
+
+.langues a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration: none;
+}

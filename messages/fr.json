@@ -1,0 +1,14 @@
+{
+  "_meta": { "origine": "ia", "relu": false },
+  "accueil": {
+    "titre": "HadithVerify AI",
+    "sousTitre": "Plateforme de vérification documentaire des hadiths — en construction",
+    "etat": "Première version de prévisualisation : aucun contenu pour l'instant."
+  },
+  "selecteurLangue": {
+    "titre": "Langue"
+  },
+  "commun": {
+    "repliSignale": "Certaines parties ne sont pas encore traduites."
+  }
+}

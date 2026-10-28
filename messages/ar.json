@@ -1,0 +1,14 @@
+{
+  "_meta": { "origine": "ia", "relu": false },
+  "accueil": {
+    "titre": "HadithVerify AI",
+    "sousTitre": "منصة للتحقق الوثائقي من الأحاديث — قيد الإنشاء",
+    "etat": "هذه نسخة تجريبية أولى: لا يوجد أي محتوى بعد."
+  },
+  "selecteurLangue": {
+    "titre": "اللغة"
+  },
+  "commun": {
+    "repliSignale": "بعض الأجزاء لم تُترجم بعد."
+  }
+}

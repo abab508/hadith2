@@ -3,3 +3,12 @@
 .env
 node_modules/
 dist/
+.env*
+!.env.example
+.next/
+out/
+.vercel/
+next-env.d.ts
+*.tsbuildinfo
+test-results/
+playwright-report/
