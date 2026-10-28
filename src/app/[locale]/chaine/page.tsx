@@ -120,8 +120,8 @@ export default function Chaine() {
                   </summary>
                   <ul className={styles.transmetteurs}>
                     {voie.transmetteurs.map((id) => {
-                      const t = corpus.transmetteurs.find((x) => x.id === id);
-                      const faible = t?.categorie === "daif";
+                      const transmetteur = corpus.transmetteurs.find((x) => x.id === id);
+                      const faible = transmetteur?.categorie === "daif";
                       if (faible && !afficherFaibles) return null;
                       return (
                         <li
@@ -131,11 +131,11 @@ export default function Chaine() {
                           data-faible={faible ? "true" : undefined}
                         >
                           <bdi lang="ar" dir="rtl" className={`${ui.arabeGrand} texte-arabe`}>
-                            {t?.nomAr}
+                            {transmetteur?.nomAr}
                           </bdi>
                           <div className={styles.details}>
-                            <bdi lang="ar-Latn" dir="ltr">{t?.nomTranslittere}</bdi>
-                            {t?.deces && <span className={ui.discret}>({t.deces})</span>}
+                            <bdi lang="ar-Latn" dir="ltr">{transmetteur?.nomTranslittere}</bdi>
+                            {transmetteur?.deces && <span className={ui.discret}>({transmetteur.deces})</span>}
                             {faible && (
                               <span className={ui.badge} data-ton="alerte">
                                 {t("faible")}
