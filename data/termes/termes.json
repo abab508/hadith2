@@ -1,26 +1,32 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "miseAJour": "2026-10-28",
   "normeTranslitteration": "provisoire-v0 (voir regles-translitteration.md)",
-  "domaines": ["authenticite", "chaine", "transmetteurs", "texte-defauts", "critique-sources"],
+  "domaines": [
+    "authenticite",
+    "chaine",
+    "transmetteurs",
+    "texte-defauts",
+    "critique-sources"
+  ],
   "termes": [
     {
-      "id": "al-illa",
-      "ar": "العلة",
-      "translitteration": "al-ʿilla",
-      "variantesTranslitteration": ["‘illa"],
-      "domaine": "texte-defauts",
+      "id": "sahih",
+      "ar": "صحيح",
+      "translitteration": "ṣaḥīḥ",
+      "variantesTranslitteration": [],
+      "domaine": "authenticite",
       "typeTerme": "terme-technique",
       "langues": {
         "fr": {
-          "terme": "Défaut caché du hadith",
-          "explication": "défaut subtil susceptible d’affecter l’évaluation d’une transmission.",
+          "terme": "Authentique",
+          "explication": "Définition à fournir par un spécialiste.",
           "origine": "humaine",
           "statutValidation": "a-valider-specialiste"
         },
         "en": {
-          "terme": "Hidden defect",
-          "explication": "a subtle defect that may affect the evaluation of a hadith transmission.",
+          "terme": "Authentic",
+          "explication": "Definition to be provided by a specialist.",
           "origine": "humaine",
           "statutValidation": "a-valider-specialiste"
         }
@@ -29,7 +35,7 @@
       "termesLies": [],
       "notesValidation": [],
       "statutValidation": "a-valider-specialiste",
-      "versionTerme": "0.1.0"
+      "versionTerme": "0.2.0"
     },
     {
       "id": "hasan",
@@ -40,14 +46,16 @@
       "typeTerme": "terme-technique",
       "langues": {
         "fr": {
-          "terme": "Bon",
-          "explication": "Bon / fiable selon la catégorie technique. Définition à fournir par un spécialiste.",
+          "terme": "Bon / fiable selon la catégorie technique",
+          "variantesLibelles": ["Bon"],
+          "explication": "Bon / fiable selon la catégorie technique",
           "origine": "humaine",
           "statutValidation": "a-valider-specialiste"
         },
         "en": {
-          "terme": "Good / fair",
-          "explication": "Good / fair, according to the technical category. Definition to be provided by a specialist.",
+          "terme": "Good / fair, according to the technical category",
+          "variantesLibelles": ["Good / fair"],
+          "explication": "Good / fair, according to the technical category",
           "origine": "humaine",
           "statutValidation": "a-valider-specialiste"
         }
@@ -56,7 +64,853 @@
       "termesLies": [],
       "notesValidation": [],
       "statutValidation": "a-valider-specialiste",
-      "versionTerme": "0.1.0"
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "daif-hadith",
+      "ar": "ضعيف",
+      "translitteration": "ḍaʿīf",
+      "variantesTranslitteration": [],
+      "domaine": "authenticite",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Faible",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Weak",
+          "explication": "Definition to be provided by a specialist.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [
+        {
+          "id": "daif-transmetteur",
+          "relation": "ne-pas-confondre"
+        }
+      ],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "mawdu",
+      "ar": "موضوع",
+      "translitteration": "mawḍūʿ",
+      "variantesTranslitteration": [],
+      "domaine": "authenticite",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Forgé",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Fabricated",
+          "explication": "Definition to be provided by a specialist.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "ghayr-muhaddad",
+      "ar": "غير محدد",
+      "translitteration": "ghayr muḥaddad",
+      "variantesTranslitteration": [],
+      "domaine": "authenticite",
+      "typeTerme": "etat-application",
+      "langues": {
+        "fr": {
+          "terme": "Non déterminé",
+          "explication": "Il s’agit d’un état de conclusion de l’application.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Undetermined",
+          "explication": "Definition to be provided by a specialist.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-sanad",
+      "ar": "السند",
+      "translitteration": "al-sanad",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Chaîne de transmission",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-riwaya",
+      "ar": "الرواية",
+      "translitteration": "al-riwāya",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmission / narration",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-rawi",
+      "ar": "الراوي",
+      "translitteration": "al-rāwī",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmetteur",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "ittisal-al-sanad",
+      "ar": "اتصال السند",
+      "translitteration": "ittiṣāl al-sanad",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Continuité de la chaîne de transmission",
+          "variantesLibelles": ["Continuité de la chaîne"],
+          "explication": "continuité documentée entre les transmetteurs d’une chaîne.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "munqati",
+      "ar": "منقطع",
+      "translitteration": "munqaṭiʿ",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Chaîne interrompue par omission d’un ou plusieurs transmetteurs",
+          "explication": "Chaîne interrompue par omission d’un ou plusieurs transmetteurs",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "mursal",
+      "ar": "مرسل",
+      "translitteration": "mursal",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmission attribuée à un Successeur sans mention du Compagnon",
+          "explication": "Transmission attribuée à un Successeur sans mention du Compagnon",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "mudal",
+      "ar": "معضل",
+      "translitteration": "muʿḍal",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Omission de deux transmetteurs consécutifs, selon la définition technique concernée",
+          "explication": "Omission de deux transmetteurs consécutifs, selon la définition technique concernée",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "muallaq",
+      "ar": "معلق",
+      "translitteration": "muʿallaq",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmission dont le début de chaîne est omis",
+          "explication": "Transmission dont le début de chaîne est omis",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "mudallas",
+      "ar": "مدلس",
+      "translitteration": "mudallas",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmission dissimulant une modalité de réception ou de transmission problématique",
+          "explication": "Transmission dissimulant une modalité de réception ou de transmission problématique",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "muttasil",
+      "ar": "متصل",
+      "translitteration": "muttaṣil",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Chaîne reliée, selon les conditions de la catégorie",
+          "explication": "Chaîne reliée, selon les conditions de la catégorie",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "marfu",
+      "ar": "مرفوع",
+      "translitteration": "marfūʿ",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Hadith attribué au Prophète",
+          "explication": "Hadith attribué au Prophète",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "mawquf",
+      "ar": "موقوف",
+      "translitteration": "mawqūf",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Rapport attribué à un Compagnon",
+          "explication": "Rapport attribué à un Compagnon",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "maqtu",
+      "ar": "مقطوع",
+      "translitteration": "maqṭūʿ",
+      "variantesTranslitteration": [],
+      "domaine": "chaine",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Rapport attribué à un Successeur ou à une génération postérieure concernée",
+          "explication": "Rapport attribué à un Successeur ou à une génération postérieure concernée",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-adala",
+      "ar": "العدالة",
+      "translitteration": "al-ʿadāla",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Fiabilité / probité du transmetteur",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-dabt",
+      "ar": "الضبط",
+      "translitteration": "al-ḍabṭ",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Précision de transmission",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-jarh",
+      "ar": "الجرح",
+      "translitteration": "al-jarḥ",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Critique négative d’un transmetteur",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-tadil",
+      "ar": "التعديل",
+      "translitteration": "al-taʿdīl",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Évaluation favorable d’un transmetteur",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "ilm-al-rijal",
+      "ar": "علم الرجال",
+      "translitteration": "ʿilm al-rijāl",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Biographies des transmetteurs",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "thiqa",
+      "ar": "ثقة",
+      "translitteration": "thiqa",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmetteur fiable",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "saduq",
+      "ar": "صدوق",
+      "translitteration": "ṣadūq",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmetteur dont la précision est à examiner, selon l’appréciation citée",
+          "explication": "Transmetteur dont la précision est à examiner, selon l’appréciation citée",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "daif-transmetteur",
+      "ar": "ضعيف",
+      "translitteration": "ḍaʿīf",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Transmetteur faible",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [
+        {
+          "id": "daif-hadith",
+          "relation": "ne-pas-confondre"
+        }
+      ],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "majhul",
+      "ar": "مجهول",
+      "translitteration": "majhūl",
+      "variantesTranslitteration": [],
+      "domaine": "transmetteurs",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Inconnu / non suffisamment identifié, selon le contexte technique",
+          "explication": "Inconnu / non suffisamment identifié, selon le contexte technique",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-matn",
+      "ar": "المتن",
+      "translitteration": "al-matn",
+      "variantesTranslitteration": [],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Texte du hadith",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-shudhudh",
+      "ar": "الشذوذ",
+      "translitteration": "al-shudhūdh",
+      "variantesTranslitteration": [],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Irrégularité ou anomalie technique",
+          "variantesLibelles": ["Irrégularité de transmission"],
+          "explication": "notion technique dont l’application dépend de l’analyse comparative des transmissions et de l’appréciation des spécialistes.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-illa",
+      "ar": "العلة",
+      "translitteration": "al-ʿilla",
+      "variantesTranslitteration": [
+        "‘illa"
+      ],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Défaut caché du hadith",
+          "variantesLibelles": ["Défaut caché"],
+          "explication": "défaut subtil susceptible d’affecter l’évaluation d’une transmission.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Hidden defect (‘illa)",
+          "explication": "a subtle defect that may affect the evaluation of a hadith transmission.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "ilal-al-hadith",
+      "ar": "علل الحديث",
+      "translitteration": "ʿilal al-ḥadīth",
+      "variantesTranslitteration": [],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Défauts cachés des hadiths",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-muqarana-bayna-al-riwayat",
+      "ar": "المقارنة بين الروايات",
+      "translitteration": "al-muqārana bayna al-riwāyāt",
+      "variantesTranslitteration": [],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Confrontation et comparaison des versions",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "ikhtilaf-al-riwayat",
+      "ar": "اختلاف الروايات",
+      "translitteration": "ikhtilāf al-riwāyāt",
+      "variantesTranslitteration": [],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Variante de transmission",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-itibar-wa-l-mutabaat-wa-l-shawahid",
+      "ar": "الاعتبار والمتابعات والشواهد",
+      "translitteration": "al-iʿtibār wa-l-mutābaʿāt wa-l-shawāhid",
+      "variantesTranslitteration": [],
+      "domaine": "texte-defauts",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Renforcement par d’autres voies, lorsque les conditions scientifiques le permettent",
+          "explication": "Renforcement par d’autres voies, lorsque les conditions scientifiques le permettent",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "al-jarh-wa-l-tadil",
+      "ar": "الجرح والتعديل",
+      "translitteration": "al-jarḥ wa-l-taʿdīl",
+      "variantesTranslitteration": [],
+      "domaine": "critique-sources",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Critique des transmetteurs",
+          "explication": "discipline qui examine et qualifie la fiabilité des transmetteurs.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Narrator criticism and accreditation",
+          "explication": "the discipline concerned with assessing narrators’ reliability and precision.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "ilm-al-ilal",
+      "ar": "علم العلل",
+      "translitteration": "ʿilm al-ʿilal",
+      "variantesTranslitteration": [],
+      "domaine": "critique-sources",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Critique des défauts cachés",
+          "explication": "étude des défauts subtils de transmission.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "ikhtilaf-al-ulama",
+      "ar": "اختلاف العلماء",
+      "translitteration": "ikhtilāf al-ʿulamāʾ",
+      "variantesTranslitteration": [],
+      "domaine": "critique-sources",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Désaccord scientifique",
+          "explication": "divergence entre spécialistes, à documenter sans l’effacer.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    },
+    {
+      "id": "hadith-sahih",
+      "ar": "حديث صحيح",
+      "translitteration": "ḥadīth ṣaḥīḥ",
+      "variantesTranslitteration": [],
+      "domaine": "authenticite",
+      "typeTerme": "terme-technique",
+      "langues": {
+        "fr": {
+          "terme": "Hadith authentique",
+          "explication": "Définition à fournir par un spécialiste.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "en": {
+          "terme": "Authentic hadith",
+          "explication": "Definition to be provided by a specialist.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        },
+        "es": {
+          "terme": "Hadiz auténtico",
+          "explication": "Definition to be provided by a specialist.",
+          "langueExplication": "en",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "references": [],
+      "termesLies": [],
+      "notesValidation": [],
+      "statutValidation": "a-valider-specialiste",
+      "versionTerme": "0.2.0"
+    }
+  ],
+  "notionsDocumentaires": [
+    {
+      "id": "analyse-critique-preuves",
+      "domaine": "critique-sources",
+      "langues": {
+        "fr": {
+          "terme": "Analyse critique des preuves",
+          "explication": "examen méthodique des sources et des arguments, sans prétendre qu’il s’agit automatiquement d’une discipline classique portant ce nom.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "statutValidation": "a-valider-specialiste",
+      "references": [],
+      "notesValidation": []
+    },
+    {
+      "id": "controle-documentaire",
+      "domaine": "critique-sources",
+      "langues": {
+        "fr": {
+          "terme": "Contrôle documentaire",
+          "explication": "vérification de l’existence, de l’exactitude et de la provenance des références.",
+          "origine": "humaine",
+          "statutValidation": "a-valider-specialiste"
+        }
+      },
+      "statutValidation": "a-valider-specialiste",
+      "references": [],
+      "notesValidation": []
     }
   ]
 }

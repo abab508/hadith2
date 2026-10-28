@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import type { CSSProperties, ReactNode } from "react";
+import { Suspense, type CSSProperties, type ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { entree } from "@/donnees/catalogue";
 import { clesManquantes } from "@/i18n/charger";
 import { routing } from "@/i18n/routing";
+import SelecteurLangue from "@/composants/SelecteurLangue";
 import "@/styles/polices.css";
 import "@/styles/global.css";
 
@@ -46,7 +47,14 @@ export default async function Layout({
             {t("repliSignale")}
           </p>
         )}
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <header>
+            <Suspense fallback={null}>
+              <SelecteurLangue />
+            </Suspense>
+          </header>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

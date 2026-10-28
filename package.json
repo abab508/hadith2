@@ -9,7 +9,8 @@
     "start": "next start",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "test:navigateur": "playwright test"
+    "test:navigateur": "playwright test",
+    "controle": "vitest run scripts"
   },
   "keywords": [],
   "author": "",

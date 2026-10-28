@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "origine": "ia",
+    "relu": false
+  },
+  "accueil": {
+    "titre": "Milaghaiba",
+    "sousTitre": "Platform pengesahan dokumentari hadis — dalam pembinaan",
+    "etat": "Versi pratonton pertama: belum ada kandungan.",
+    "exempleTerme": "Contoh istilah:",
+    "glossaire": "Lihat glosari"
+  },
+  "selecteurLangue": {
+    "titre": "Bahasa",
+    "indisponible": "antara muka belum tersedia"
+  },
+  "commun": {
+    "repliSignale": "Sesetengah bahagian belum diterjemahkan."
+  },
+  "terme": {
+    "aValider": "menunggu pengesahan oleh pakar"
+  },
+  "glossaire": {
+    "titre": "Glosari",
+    "introduction": "Terminologi rujukan: istilah dan terjemahan menunggu pengesahan oleh pakar.",
+    "domaines": {
+      "authenticite": "Kesahihan",
+      "chaine": "Rantaian periwayatan",
+      "transmetteurs": "Perawi",
+      "texteDefauts": "Teks dan kecacatan",
+      "critiqueSources": "Kritikan sumber"
+    },
+    "repli": "Terjemahan dipaparkan dalam bahasa {langue}."
+  }
+}

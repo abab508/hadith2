@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "origine": "ia",
+    "relu": false
+  },
+  "accueil": {
+    "titre": "Milaghaiba",
+    "sousTitre": "Hadislerin belgesel doğrulama platformu — yapım aşamasında",
+    "etat": "İlk önizleme sürümü: henüz içerik yok.",
+    "exempleTerme": "Terim örneği:",
+    "glossaire": "Sözlüğe göz at"
+  },
+  "selecteurLangue": {
+    "titre": "Dil",
+    "indisponible": "arayüz henüz kullanılamıyor"
+  },
+  "commun": {
+    "repliSignale": "Bazı bölümler henüz çevrilmedi."
+  },
+  "terme": {
+    "aValider": "uzman doğrulaması bekleniyor"
+  },
+  "glossaire": {
+    "titre": "Sözlük",
+    "introduction": "Başvuru terminolojisi: terimler ve çeviriler uzman doğrulaması beklemektedir.",
+    "domaines": {
+      "authenticite": "Sıhhat",
+      "chaine": "Rivayet zinciri",
+      "transmetteurs": "Râviler",
+      "texteDefauts": "Metin ve kusurlar",
+      "critiqueSources": "Kaynak eleştirisi"
+    },
+    "repli": "Çeviri {langue} dilinde gösteriliyor."
+  }
+}

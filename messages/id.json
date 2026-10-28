@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "origine": "ia",
+    "relu": false
+  },
+  "accueil": {
+    "titre": "Milaghaiba",
+    "sousTitre": "Platform verifikasi dokumenter hadis — sedang dibangun",
+    "etat": "Versi pratinjau pertama: belum ada konten.",
+    "exempleTerme": "Contoh istilah:",
+    "glossaire": "Lihat glosarium"
+  },
+  "selecteurLangue": {
+    "titre": "Bahasa",
+    "indisponible": "antarmuka belum tersedia"
+  },
+  "commun": {
+    "repliSignale": "Beberapa bagian belum diterjemahkan."
+  },
+  "terme": {
+    "aValider": "menunggu validasi oleh ahli"
+  },
+  "glossaire": {
+    "titre": "Glosarium",
+    "introduction": "Terminologi acuan: istilah dan terjemahan menunggu validasi oleh ahli.",
+    "domaines": {
+      "authenticite": "Keautentikan",
+      "chaine": "Rantai periwayatan",
+      "transmetteurs": "Perawi",
+      "texteDefauts": "Teks dan cacat",
+      "critiqueSources": "Kritik sumber"
+    },
+    "repli": "Terjemahan ditampilkan dalam bahasa {langue}."
+  }
+}

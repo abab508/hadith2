@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "miseAJour": "2026-10-28",
   "langueParDefaut": "ar",
   "entrees": [
@@ -129,6 +129,143 @@
         "secours": [
           "Noto Naskh Arabic"
         ]
+      }
+    },
+    {
+      "tag": "es",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "es",
+      "nomNatif": "Español",
+      "nomsTraduits": {
+        "ar": "الإسبانية",
+        "fr": "espagnol",
+        "en": "Spanish"
+      },
+      "direction": "ltr",
+      "ecriture": "Latn",
+      "regions": [
+        "ES"
+      ],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "experimentale",
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Sans"
+      }
+    },
+    {
+      "tag": "id",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "id",
+      "nomNatif": "Bahasa Indonesia",
+      "nomsTraduits": {
+        "ar": "الإندونيسية",
+        "fr": "indonésien",
+        "en": "Indonesian"
+      },
+      "direction": "ltr",
+      "ecriture": "Latn",
+      "regions": [
+        "ID"
+      ],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "experimentale",
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Sans"
+      }
+    },
+    {
+      "tag": "ms",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "ms",
+      "nomNatif": "Bahasa Melayu",
+      "nomsTraduits": {
+        "ar": "الملايوية",
+        "fr": "malais",
+        "en": "Malay"
+      },
+      "direction": "ltr",
+      "ecriture": "Latn",
+      "regions": [
+        "MY",
+        "BN"
+      ],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "experimentale",
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Sans"
+      }
+    },
+    {
+      "tag": "tr",
+      "codeOfficiel": true,
+      "type": "langue",
+      "langueDeBase": "tr",
+      "nomNatif": "Türkçe",
+      "nomsTraduits": {
+        "ar": "التركية",
+        "fr": "turc",
+        "en": "Turkish"
+      },
+      "direction": "ltr",
+      "ecriture": "Latn",
+      "regions": [
+        "TR"
+      ],
+      "niveaux": {
+        "identifiee": true,
+        "affichable": true,
+        "interface": true,
+        "recherche": false,
+        "traductionAuto": false,
+        "contenuDocumentaire": false,
+        "contenuVerifie": false,
+        "validationHumaine": false
+      },
+      "statut": "experimentale",
+      "remplacements": [
+        "en"
+      ],
+      "police": {
+        "famille": "Noto Sans"
       }
     }
   ]

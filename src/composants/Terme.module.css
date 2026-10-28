@@ -4,6 +4,15 @@
   cursor: help;
 }
 
+.repli {
+  color: var(--discret);
+  font-size: 0.875rem;
+}
+
+.terme [lang="ar"] {
+  font-family: "Noto Naskh Arabic", serif;
+}
+
 .infobulle {
   position: absolute;
   inset-block-start: 100%;
