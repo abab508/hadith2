@@ -1,0 +1,108 @@
+name: Boualem - Tâche Codex
+# Adapté de boualem-codex-agents/codex-task.yml pour le dépôt hadith.
+# Lancer avec : gh workflow run codex-task.yml -R abab508/hadith --ref <branche> -f task='...'
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Tâche précise (max 2000 caractères, sans secrets)'
+        required: true
+        type: string
+      sector:
+        description: 'Secteur'
+        required: true
+        type: string
+        default: 'developpement'
+      product:
+        description: 'Produit'
+        required: true
+        type: string
+        default: 'hadith'
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Validate inputs
+        env:
+          TASK: ${{ inputs.task }}
+          SECTOR: ${{ inputs.sector }}
+          PRODUCT: ${{ inputs.product }}
+        run: |
+          python3 - <<'PYCODE'
+          import os,sys
+          for key,limit in [('TASK',2000),('SECTOR',80),('PRODUCT',80)]:
+              val=os.environ[key]
+              if not val.strip() or len(val)>limit or '\x00' in val:
+                  sys.exit(f'Invalid input: {key}')
+          PYCODE
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Prepare task file
+        env:
+          TASK: ${{ inputs.task }}
+          SECTOR: ${{ inputs.sector }}
+          PRODUCT: ${{ inputs.product }}
+        run: |
+          python3 - <<'PYCODE'
+          import os
+          text=f"""Respecte AGENTS.md. N'accède pas aux secrets. Ne modifie pas .github/workflows, AGENTS.md ou les règles de sécurité. Ne fais pas de déploiement.
+          Secteur : {os.environ['SECTOR']}
+          Produit : {os.environ['PRODUCT']}
+          Tâche : {os.environ['TASK']}
+          Effectue les modifications utiles puis décris les tests réellement effectués. Si le dépôt ne contient pas le code nécessaire, explique le blocage plutôt que d'inventer des fichiers.
+          """
+          open('/tmp/boualem-task.txt','w').write(text)
+          PYCODE
+      - name: Install Codex CLI
+        run: npm install -g @openai/codex
+      - name: Run Codex
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CODEX_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          test -n "$OPENAI_API_KEY" || { echo 'OPENAI_API_KEY secret missing'; exit 1; }
+          # Réseau ouvert dans le bac à sable : nécessaire pour télécharger les polices Noto.
+          codex exec --skip-git-repo-check --sandbox workspace-write \
+            -c sandbox_workspace_write.network_access=true \
+            - < /tmp/boualem-task.txt | tee /tmp/codex-rapport.txt
+      - name: Independent checks
+        run: |
+          npm test
+          npm run build
+          if npm run | grep -q 'test:navigateur'; then npm run test:navigateur; fi
+      - name: Protect control files
+        run: |
+          if git status --porcelain | grep -E '(^| )(.github/workflows/|AGENTS.md|.gitignore)' ; then
+            echo 'Protected control file changed'; exit 1
+          fi
+          if git status --porcelain | grep -E '\.env' ; then
+            echo 'Env file created'; exit 1
+          fi
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: codex/boualem-${{ github.run_id }}
+          base: ${{ github.ref_name }}
+          delete-branch: false
+          title: 'Boualem Codex: ${{ inputs.product }} / ${{ inputs.sector }} (run ${{ github.run_id }})'
+          body: |
+            Exécution automatique Codex. **Revue humaine obligatoire.**
+            Secteur : `${{ inputs.sector }}` — Produit : `${{ inputs.product }}`
+            Contrôles indépendants (npm test, build, tests navigateur) : réussis dans le workflow.
+            Détails et rapport de Codex : journaux du run ${{ github.run_id }}.
+            Ne pas fusionner sans contrôle des changements et des résultats.
+          commit-message: 'chore: résultat tâche Boualem Codex'
