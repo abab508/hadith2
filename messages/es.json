@@ -31,5 +31,69 @@
       "critiqueSources": "Crítica de las fuentes"
     },
     "repli": "Traducción mostrada en {langue}."
+  },
+  "navigation": {
+    "titre": "Navegación",
+    "parametres": "Configuración",
+    "langues": "Idiomas y disponibilidad",
+    "accueil": "Inicio"
+  },
+  "ouverture": {
+    "titre": "Abrir el idioma guardado",
+    "chargement": "Abriendo la interfaz…",
+    "sansScript": "Activa JavaScript para recuperar el idioma guardado en este dispositivo.",
+    "arabe": "Abrir el sitio en árabe"
+  },
+  "pref": {
+    "titre": "Preferencias de idioma",
+    "intro": "Tres ajustes independientes. Cambiar uno no modifica los demás.",
+    "interface": {
+      "titre": "Idioma de la interfaz",
+      "aide": "Menús, botones y configuración."
+    },
+    "rapport": {
+      "titre": "Idioma del informe",
+      "aide": "Idioma de las explicaciones y la síntesis. Los textos originales permanecen siempre en su idioma.",
+      "termes": "Los términos técnicos se muestran siempre con el árabe y la transliteración.",
+      "termesNonValides": "Algunos términos técnicos aún no se han validado en este idioma. Se mostrarán en árabe con su transliteración."
+    },
+    "recherche": {
+      "titre": "Idiomas de búsqueda documental",
+      "aide": "Idiomas en los que buscar fuentes y traducciones.",
+      "arabeToujours": "El árabe siempre se incluye porque es el idioma de los textos originales.",
+      "peuDeSources": "Hay pocas o ninguna fuente en este idioma.",
+      "nonAdaptee": "La búsqueda aún no está adaptada a este idioma.",
+      "arabeSeul": "Añade otros idiomas para encontrar también traducciones."
+    },
+    "resume": "Interfaz en {li} · Informe en {lr} · Búsqueda en {lrd}",
+    "enregistrer": "Guardar preferencias",
+    "annuler": "Cancelar",
+    "ok": "Preferencias guardadas.",
+    "visiteur": "Los ajustes se guardan en este dispositivo, sin cuenta ni cookies. Si el almacenamiento no está disponible, permanecen en la memoria durante esta sesión.",
+    "chargement": "Cargando las preferencias…",
+    "session": "Almacenamiento no disponible: los ajustes se conservan durante esta sesión."
+  },
+  "langues": {
+    "titre": "Idiomas y disponibilidad",
+    "introduction": "Consulta por separado las traducciones de la interfaz y los recursos documentales.",
+    "avertissement": "Una interfaz traducida no significa que todas las fuentes o todos los dictámenes existan en ese idioma.",
+    "experimentale": "Idioma experimental",
+    "oui": "Sí",
+    "non": "No",
+    "disponibilites": "Disponibilidad",
+    "documentationPartielle": "Documentación parcialmente disponible",
+    "documentationSpecialisee": "Documentación especializada verificada",
+    "detailNiveaux": "Los ocho niveles del catálogo",
+    "completude": "Traducciones de la interfaz: {presentes} / {total} claves ({pourcentage}).",
+    "niveaux": {
+      "identifiee": "Idioma identificado",
+      "affichable": "Escritura visualizable",
+      "interface": "Interfaz disponible",
+      "recherche": "Búsqueda disponible",
+      "traductionAuto": "Traducción automática disponible",
+      "contenuDocumentaire": "Contenido documental disponible",
+      "contenuVerifie": "Contenido especializado verificado",
+      "validationHumaine": "Validación humana disponible"
+    }
   }
 }

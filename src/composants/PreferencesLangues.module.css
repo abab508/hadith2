@@ -1,0 +1,107 @@
+.page {
+  max-inline-size: 52rem;
+  margin-inline: auto;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  text-align: start;
+}
+
+.page a {
+  color: var(--accent);
+}
+
+.groupe {
+  min-inline-size: 0;
+  margin-block: 1.5rem;
+  margin-inline: 0;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  border: 1px solid var(--discret);
+  border-radius: 0.5rem;
+}
+
+.groupe legend {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-inline: 0.5rem;
+}
+
+.groupe select {
+  display: block;
+  inline-size: 100%;
+  margin-block-start: 0.5rem;
+  min-block-size: 2.75rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.75rem;
+  font: inherit;
+  color: var(--texte);
+  background: var(--fond);
+  border: 1px solid var(--discret);
+  border-radius: 0.25rem;
+}
+
+.langues {
+  list-style: none;
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 0.75rem;
+}
+
+.choix {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  min-block-size: 2.75rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+.choix input {
+  flex-shrink: 0;
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}
+
+.choix small {
+  display: block;
+  font-size: 1rem;
+}
+
+.choix bdi[dir="rtl"] {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.actions button {
+  min-block-size: 2.75rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.25rem;
+  color: var(--accent);
+  background: var(--fond);
+  font: inherit;
+  cursor: pointer;
+}
+
+.actions button[type="submit"] {
+  background: var(--accent);
+  color: var(--fond);
+}
+
+.page :is(a, select, input, button):focus-visible,
+.confirmation:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 0.25rem;
+}
+
+.confirmation {
+  min-block-size: 1.6em;
+}

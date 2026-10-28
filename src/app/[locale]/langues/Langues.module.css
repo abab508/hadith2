@@ -1,0 +1,91 @@
+.page {
+  max-inline-size: 76rem;
+  margin-inline: auto;
+  padding-block: 2rem 4rem;
+  padding-inline: 1rem;
+  text-align: start;
+}
+
+.avertissement {
+  padding-block: 1rem;
+  padding-inline: 1.25rem;
+  border-inline-start: 0.25rem solid var(--accent);
+}
+
+.langues {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  gap: 1.5rem;
+  margin-block-start: 2rem;
+}
+
+.langue {
+  min-inline-size: 0;
+  padding-block: 1.25rem;
+  padding-inline: 1.5rem;
+  border: 1px solid var(--discret);
+  border-radius: 0.5rem;
+  overflow-wrap: anywhere;
+}
+
+.nom {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 0.75rem;
+  row-gap: 0.25rem;
+  margin-block-start: 0;
+  line-height: 1.8;
+}
+
+.code {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.badge {
+  display: inline-block;
+  margin-block: 0;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  border: 1px dashed currentColor;
+  border-radius: 0.25rem;
+}
+
+.completude {
+  margin-block: 1rem;
+}
+
+.niveaux {
+  margin-block: 0.75rem 0;
+}
+
+.niveaux > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.5rem;
+  border-block-end: 1px solid var(--discret);
+}
+
+.niveaux dd {
+  flex-shrink: 0;
+  margin-inline: 0;
+  font-weight: 700;
+}
+
+.details {
+  margin-block-start: 1.25rem;
+}
+
+.details summary {
+  min-block-size: 2.75rem;
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+.details summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}

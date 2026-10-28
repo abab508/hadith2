@@ -31,5 +31,69 @@
       "critiqueSources": "Kritikan sumber"
     },
     "repli": "Terjemahan dipaparkan dalam bahasa {langue}."
+  },
+  "navigation": {
+    "titre": "Navigasi",
+    "parametres": "Tetapan",
+    "langues": "Bahasa dan ketersediaan",
+    "accueil": "Laman utama"
+  },
+  "ouverture": {
+    "titre": "Buka bahasa tersimpan",
+    "chargement": "Membuka antara muka anda…",
+    "sansScript": "Aktifkan JavaScript untuk memulihkan bahasa yang disimpan pada peranti ini.",
+    "arabe": "Buka laman dalam bahasa Arab"
+  },
+  "pref": {
+    "titre": "Keutamaan bahasa",
+    "intro": "Tiga tetapan berasingan. Menukar satu tetapan tidak mengubah yang lain.",
+    "interface": {
+      "titre": "Bahasa antara muka",
+      "aide": "Menu, butang dan tetapan."
+    },
+    "rapport": {
+      "titre": "Bahasa laporan",
+      "aide": "Bahasa penjelasan dan ringkasan. Teks asal sentiasa kekal dalam bahasa asalnya.",
+      "termes": "Istilah teknikal sentiasa dipaparkan bersama bahasa Arab dan transliterasinya.",
+      "termesNonValides": "Sesetengah istilah teknikal belum disahkan dalam bahasa ini. Istilah tersebut akan dipaparkan dalam bahasa Arab berserta transliterasinya."
+    },
+    "recherche": {
+      "titre": "Bahasa carian dokumentari",
+      "aide": "Bahasa yang digunakan untuk mencari sumber dan terjemahan.",
+      "arabeToujours": "Bahasa Arab sentiasa disertakan kerana merupakan bahasa teks asal.",
+      "peuDeSources": "Sedikit atau tiada sumber dalam bahasa ini.",
+      "nonAdaptee": "Carian belum disesuaikan untuk bahasa ini.",
+      "arabeSeul": "Tambah bahasa lain untuk mencari terjemahan juga."
+    },
+    "resume": "Antara muka: {li} · Laporan: {lr} · Carian: {lrd}",
+    "enregistrer": "Simpan keutamaan",
+    "annuler": "Batal",
+    "ok": "Keutamaan disimpan.",
+    "visiteur": "Tetapan disimpan pada peranti ini, tanpa akaun atau kuki. Jika storan tidak tersedia, tetapan kekal dalam ingatan sepanjang sesi ini.",
+    "chargement": "Memuatkan keutamaan anda…",
+    "session": "Storan tidak tersedia: tetapan disimpan sepanjang sesi ini."
+  },
+  "langues": {
+    "titre": "Bahasa dan ketersediaan",
+    "introduction": "Semak terjemahan antara muka dan sumber dokumentari secara berasingan.",
+    "avertissement": "Antara muka yang diterjemahkan tidak bermakna semua sumber atau penilaian tersedia dalam bahasa tersebut.",
+    "experimentale": "Bahasa eksperimen",
+    "oui": "Ya",
+    "non": "Tidak",
+    "disponibilites": "Ketersediaan",
+    "documentationPartielle": "Dokumentasi tersedia sebahagiannya",
+    "documentationSpecialisee": "Dokumentasi khusus yang disahkan",
+    "detailNiveaux": "Lapan tahap dalam katalog",
+    "completude": "Terjemahan antara muka: {presentes} / {total} kunci ({pourcentage}).",
+    "niveaux": {
+      "identifiee": "Bahasa dikenal pasti",
+      "affichable": "Tulisan boleh dipaparkan",
+      "interface": "Antara muka tersedia",
+      "recherche": "Carian tersedia",
+      "traductionAuto": "Terjemahan mesin tersedia",
+      "contenuDocumentaire": "Kandungan dokumentari tersedia",
+      "contenuVerifie": "Kandungan khusus yang disahkan",
+      "validationHumaine": "Pengesahan manusia tersedia"
+    }
   }
 }

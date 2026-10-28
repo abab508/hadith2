@@ -31,5 +31,69 @@
       "critiqueSources": "Kritik sumber"
     },
     "repli": "Terjemahan ditampilkan dalam bahasa {langue}."
+  },
+  "navigation": {
+    "titre": "Navigasi",
+    "parametres": "Pengaturan",
+    "langues": "Bahasa dan ketersediaan",
+    "accueil": "Beranda"
+  },
+  "ouverture": {
+    "titre": "Buka bahasa tersimpan",
+    "chargement": "Membuka antarmuka Anda…",
+    "sansScript": "Aktifkan JavaScript untuk memulihkan bahasa yang tersimpan di perangkat ini.",
+    "arabe": "Buka situs dalam bahasa Arab"
+  },
+  "pref": {
+    "titre": "Preferensi bahasa",
+    "intro": "Tiga pengaturan terpisah. Mengubah satu pengaturan tidak mengubah yang lain.",
+    "interface": {
+      "titre": "Bahasa antarmuka",
+      "aide": "Menu, tombol, dan pengaturan."
+    },
+    "rapport": {
+      "titre": "Bahasa laporan",
+      "aide": "Bahasa penjelasan dan ringkasan. Teks asli selalu tetap dalam bahasa aslinya.",
+      "termes": "Istilah teknis selalu ditampilkan bersama bahasa Arab dan transliterasinya.",
+      "termesNonValides": "Beberapa istilah teknis belum divalidasi dalam bahasa ini. Istilah tersebut akan ditampilkan dalam bahasa Arab beserta transliterasinya."
+    },
+    "recherche": {
+      "titre": "Bahasa pencarian dokumenter",
+      "aide": "Bahasa yang digunakan untuk mencari sumber dan terjemahan.",
+      "arabeToujours": "Bahasa Arab selalu disertakan karena merupakan bahasa teks asli.",
+      "peuDeSources": "Sumber dalam bahasa ini sedikit atau tidak tersedia.",
+      "nonAdaptee": "Pencarian belum disesuaikan untuk bahasa ini.",
+      "arabeSeul": "Tambahkan bahasa lain untuk menemukan terjemahan juga."
+    },
+    "resume": "Antarmuka: {li} · Laporan: {lr} · Pencarian: {lrd}",
+    "enregistrer": "Simpan preferensi",
+    "annuler": "Batal",
+    "ok": "Preferensi disimpan.",
+    "visiteur": "Pengaturan disimpan di perangkat ini, tanpa akun atau kuki. Jika penyimpanan tidak tersedia, pengaturan tetap berada di memori selama sesi ini.",
+    "chargement": "Memuat preferensi Anda…",
+    "session": "Penyimpanan tidak tersedia: pengaturan disimpan selama sesi ini."
+  },
+  "langues": {
+    "titre": "Bahasa dan ketersediaan",
+    "introduction": "Periksa terjemahan antarmuka dan sumber dokumenter secara terpisah.",
+    "avertissement": "Antarmuka yang diterjemahkan tidak berarti semua sumber atau penilaian tersedia dalam bahasa tersebut.",
+    "experimentale": "Bahasa eksperimental",
+    "oui": "Ya",
+    "non": "Tidak",
+    "disponibilites": "Ketersediaan",
+    "documentationPartielle": "Dokumentasi tersedia sebagian",
+    "documentationSpecialisee": "Dokumentasi khusus terverifikasi",
+    "detailNiveaux": "Delapan tingkat dalam katalog",
+    "completude": "Terjemahan antarmuka: {presentes} / {total} kunci ({pourcentage}).",
+    "niveaux": {
+      "identifiee": "Bahasa teridentifikasi",
+      "affichable": "Aksara dapat ditampilkan",
+      "interface": "Antarmuka tersedia",
+      "recherche": "Pencarian tersedia",
+      "traductionAuto": "Terjemahan mesin tersedia",
+      "contenuDocumentaire": "Konten dokumenter tersedia",
+      "contenuVerifie": "Konten khusus terverifikasi",
+      "validationHumaine": "Validasi manusia tersedia"
+    }
   }
 }

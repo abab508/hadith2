@@ -1,4 +1,4 @@
-import brut from "../../data/langues/catalogue.json";
+import brut from "../../data/langues/catalogue.json" with { type: "json" };
 import { catalogueLangues, type CatalogueLangues, type EntreeLangue } from "./schemas/langue";
 
 function charger(donnees: unknown): CatalogueLangues {

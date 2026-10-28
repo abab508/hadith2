@@ -31,5 +31,69 @@
       "critiqueSources": "Critique des sources"
     },
     "repli": "Traduction affichée en {langue}."
+  },
+  "navigation": {
+    "titre": "Navigation",
+    "parametres": "Paramètres",
+    "langues": "Langues et disponibilités",
+    "accueil": "Accueil"
+  },
+  "ouverture": {
+    "titre": "Choisir la langue mémorisée",
+    "chargement": "Ouverture de votre interface…",
+    "sansScript": "Activez JavaScript pour retrouver la langue mémorisée sur cet appareil.",
+    "arabe": "Ouvrir le site en arabe"
+  },
+  "pref": {
+    "titre": "Préférences de langue",
+    "intro": "Trois réglages séparés. Changer l’un ne change pas les autres.",
+    "interface": {
+      "titre": "Langue de l’interface",
+      "aide": "Menus, boutons et paramètres."
+    },
+    "rapport": {
+      "titre": "Langue du rapport",
+      "aide": "Langue des explications et de la synthèse. Les textes originaux restent toujours dans leur langue.",
+      "termes": "Les termes techniques s’affichent toujours avec l’arabe et la translittération.",
+      "termesNonValides": "Certains termes techniques ne sont pas encore validés dans cette langue. Ils s’afficheront en arabe avec leur translittération."
+    },
+    "recherche": {
+      "titre": "Langues de recherche documentaire",
+      "aide": "Langues dans lesquelles chercher les sources et les traductions.",
+      "arabeToujours": "L’arabe est toujours inclus : c’est la langue des textes originaux.",
+      "peuDeSources": "Peu ou pas de sources dans cette langue.",
+      "nonAdaptee": "Recherche non adaptée à cette langue pour l’instant.",
+      "arabeSeul": "Ajoutez d’autres langues pour trouver aussi des traductions."
+    },
+    "resume": "Interface en {li} · Rapport en {lr} · Recherche en {lrd}",
+    "enregistrer": "Enregistrer les préférences",
+    "annuler": "Annuler",
+    "ok": "Préférences enregistrées.",
+    "visiteur": "Vos réglages sont gardés sur cet appareil, sans compte ni cookie. Si le stockage est indisponible, ils restent en mémoire pour cette session.",
+    "chargement": "Chargement de vos préférences…",
+    "session": "Stockage indisponible : vos réglages sont conservés pour cette session."
+  },
+  "langues": {
+    "titre": "Langues et disponibilités",
+    "introduction": "Consultez séparément les traductions de l’interface et les ressources documentaires.",
+    "avertissement": "Une interface traduite ne signifie pas que toutes les sources ou tous les jugements existent dans cette langue.",
+    "experimentale": "Langue expérimentale",
+    "oui": "Oui",
+    "non": "Non",
+    "disponibilites": "Disponibilités",
+    "documentationPartielle": "Documentation partiellement disponible",
+    "documentationSpecialisee": "Documentation spécialisée vérifiée",
+    "detailNiveaux": "Les huit niveaux du catalogue",
+    "completude": "Traductions de l’interface : {presentes} / {total} clés ({pourcentage}).",
+    "niveaux": {
+      "identifiee": "Langue identifiée",
+      "affichable": "Écriture affichable",
+      "interface": "Interface disponible",
+      "recherche": "Recherche disponible",
+      "traductionAuto": "Traduction automatique disponible",
+      "contenuDocumentaire": "Contenu documentaire disponible",
+      "contenuVerifie": "Contenu spécialisé vérifié",
+      "validationHumaine": "Validation humaine disponible"
+    }
   }
 }

@@ -31,5 +31,69 @@
       "critiqueSources": "Kaynak eleştirisi"
     },
     "repli": "Çeviri {langue} dilinde gösteriliyor."
+  },
+  "navigation": {
+    "titre": "Gezinme",
+    "parametres": "Ayarlar",
+    "langues": "Diller ve kullanılabilirlik",
+    "accueil": "Ana sayfa"
+  },
+  "ouverture": {
+    "titre": "Kaydedilen dili aç",
+    "chargement": "Arayüzünüz açılıyor…",
+    "sansScript": "Bu cihazda kaydedilen dili geri yüklemek için JavaScript’i etkinleştirin.",
+    "arabe": "Siteyi Arapça aç"
+  },
+  "pref": {
+    "titre": "Dil tercihleri",
+    "intro": "Üç ayrı ayar. Birini değiştirmek diğerlerini değiştirmez.",
+    "interface": {
+      "titre": "Arayüz dili",
+      "aide": "Menüler, düğmeler ve ayarlar."
+    },
+    "rapport": {
+      "titre": "Rapor dili",
+      "aide": "Açıklamaların ve özetin dili. Özgün metinler her zaman kendi dillerinde kalır.",
+      "termes": "Teknik terimler her zaman Arapça ve harf çevrimiyle birlikte gösterilir.",
+      "termesNonValides": "Bazı teknik terimler bu dilde henüz doğrulanmamıştır. Arapça ve harf çevrimiyle gösterilecektir."
+    },
+    "recherche": {
+      "titre": "Belge arama dilleri",
+      "aide": "Kaynak ve çevirilerin aranacağı diller.",
+      "arabeToujours": "Özgün metinlerin dili olduğu için Arapça her zaman dahildir.",
+      "peuDeSources": "Bu dilde az sayıda kaynak var veya hiç yok.",
+      "nonAdaptee": "Arama henüz bu dile uyarlanmamıştır.",
+      "arabeSeul": "Çevirileri de bulmak için başka diller ekleyin."
+    },
+    "resume": "Arayüz: {li} · Rapor: {lr} · Arama: {lrd}",
+    "enregistrer": "Tercihleri kaydet",
+    "annuler": "İptal",
+    "ok": "Tercihler kaydedildi.",
+    "visiteur": "Ayarlarınız bu cihazda, hesap veya çerez olmadan saklanır. Depolama kullanılamıyorsa bu oturum boyunca bellekte tutulur.",
+    "chargement": "Tercihleriniz yükleniyor…",
+    "session": "Depolama kullanılamıyor: ayarlarınız bu oturum için saklanıyor."
+  },
+  "langues": {
+    "titre": "Diller ve kullanılabilirlik",
+    "introduction": "Arayüz çevirilerini ve belge kaynaklarını ayrı ayrı inceleyin.",
+    "avertissement": "Arayüzün çevrilmiş olması, tüm kaynakların veya hükümlerin bu dilde bulunduğu anlamına gelmez.",
+    "experimentale": "Deneysel dil",
+    "oui": "Evet",
+    "non": "Hayır",
+    "disponibilites": "Kullanılabilirlik",
+    "documentationPartielle": "Kısmen kullanılabilir belgeler",
+    "documentationSpecialisee": "Doğrulanmış uzmanlık belgeleri",
+    "detailNiveaux": "Katalogdaki sekiz düzey",
+    "completude": "Arayüz çevirileri: {presentes} / {total} anahtar ({pourcentage}).",
+    "niveaux": {
+      "identifiee": "Tanımlanmış dil",
+      "affichable": "Yazı sistemi görüntülenebilir",
+      "interface": "Arayüz kullanılabilir",
+      "recherche": "Arama kullanılabilir",
+      "traductionAuto": "Makine çevirisi kullanılabilir",
+      "contenuDocumentaire": "Belge içeriği kullanılabilir",
+      "contenuVerifie": "Doğrulanmış uzmanlık içeriği",
+      "validationHumaine": "İnsan doğrulaması kullanılabilir"
+    }
   }
 }

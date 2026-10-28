@@ -12,7 +12,8 @@
   font-weight: 700;
 }
 
-.langues {
+.langues,
+.liens {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 1rem;
@@ -22,6 +23,7 @@
 }
 
 .langues a,
+.liens a,
 .indisponible {
   display: inline-flex;
   align-items: center;
@@ -43,11 +45,16 @@
   line-height: 1.8;
 }
 
-.langues a:focus-visible {
+.langues a:focus-visible,
+.liens a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 0.25rem;
 }
 
 .indisponible {
   color: var(--discret);
+}
+
+.liens {
+  margin-block-start: 0.75rem;
 }

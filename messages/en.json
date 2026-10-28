@@ -31,5 +31,69 @@
       "critiqueSources": "Source criticism"
     },
     "repli": "Translation displayed in {langue}."
+  },
+  "navigation": {
+    "titre": "Navigation",
+    "parametres": "Settings",
+    "langues": "Languages and availability",
+    "accueil": "Home"
+  },
+  "ouverture": {
+    "titre": "Open the saved language",
+    "chargement": "Opening your interface…",
+    "sansScript": "Enable JavaScript to restore the language saved on this device.",
+    "arabe": "Open the site in Arabic"
+  },
+  "pref": {
+    "titre": "Language preferences",
+    "intro": "Three separate settings. Changing one does not change the others.",
+    "interface": {
+      "titre": "Interface language",
+      "aide": "Menus, buttons and settings."
+    },
+    "rapport": {
+      "titre": "Report language",
+      "aide": "Language of explanations and summaries. Original texts always remain in their own language.",
+      "termes": "Technical terms are always shown with Arabic and transliteration.",
+      "termesNonValides": "Some technical terms have not yet been validated in this language. They will be shown in Arabic with transliteration."
+    },
+    "recherche": {
+      "titre": "Documentary search languages",
+      "aide": "Languages used to search for sources and translations.",
+      "arabeToujours": "Arabic is always included because it is the language of the original texts.",
+      "peuDeSources": "Few or no sources in this language.",
+      "nonAdaptee": "Search is not yet adapted to this language.",
+      "arabeSeul": "Add other languages to find translations too."
+    },
+    "resume": "Interface in {li} · Report in {lr} · Search in {lrd}",
+    "enregistrer": "Save preferences",
+    "annuler": "Cancel",
+    "ok": "Preferences saved.",
+    "visiteur": "Your settings are kept on this device, without an account or cookies. If storage is unavailable, they remain in memory for this session.",
+    "chargement": "Loading your preferences…",
+    "session": "Storage unavailable: your settings are kept for this session."
+  },
+  "langues": {
+    "titre": "Languages and availability",
+    "introduction": "Check interface translations and documentary resources separately.",
+    "avertissement": "A translated interface does not mean that all sources or assessments exist in this language.",
+    "experimentale": "Experimental language",
+    "oui": "Yes",
+    "non": "No",
+    "disponibilites": "Availability",
+    "documentationPartielle": "Documentation partially available",
+    "documentationSpecialisee": "Verified specialist documentation",
+    "detailNiveaux": "The eight catalogue levels",
+    "completude": "Interface translations: {presentes} / {total} keys ({pourcentage}).",
+    "niveaux": {
+      "identifiee": "Language identified",
+      "affichable": "Script display supported",
+      "interface": "Interface available",
+      "recherche": "Search available",
+      "traductionAuto": "Machine translation available",
+      "contenuDocumentaire": "Documentary content available",
+      "contenuVerifie": "Verified specialist content",
+      "validationHumaine": "Human validation available"
+    }
   }
 }
