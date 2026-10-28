@@ -5,8 +5,8 @@ import Terme from "@/composants/Terme";
 import ui from "@/composants/Interface.module.css";
 import styles from "./Rapport.module.css";
 
-export async function generateStaticParams({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+export function generateStaticParams({ params }: { params: { locale: string; id: string } }) {
+  const { locale } = params;
   return corpus.hadiths.map((h) => ({ locale, id: h.id }));
 }
 
