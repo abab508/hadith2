@@ -1,1 +1,48 @@
 # Décisions (date | décision | raison)
+2026-10-28 — Catalogue des langues : une entrée = un tag BCP 47 = une seule écriture ; langues multi-écritures = plusieurs entrées liées par `langueDeBase` — le script fait partie du tag BCP 47, modèle plus simple.
+2026-10-28 — Identifiant `-x-` seulement si aucun code officiel ni langue+région n'existe ; forme `<langue>-x-<nom ≤8 car.>`, `codeOfficiel:false`, `nomsTraduits` ar/fr/en et `localeFormats` obligatoires — exigence 03 §8, et aucune base CLDR ne connaît ces identifiants.
+2026-10-28 — Les 8 niveaux de prise en charge sont des booléens à `false` par défaut ; la complétude de l'interface est calculée par script, jamais stockée — éviter des chiffres faux ou périmés.
+2026-10-28 — Repli final implicite sur `ar` après la liste `remplacements` — l'arabe est la langue par défaut du produit (03 §6).
+2026-10-28 — Dictionnaire : le booléen `valide` est remplacé par `statutValidation` (défaut « a-valider-specialiste »), au niveau du terme et de chaque langue — exigence d'un statut explicite et validation séparée par langue (02 §6).
+2026-10-28 — Dictionnaire : traductions rangées dans `langues.<tag>` (fr, en obligatoires) — ajouter une langue sans changer la structure.
+2026-10-28 — Un même mot arabe peut avoir plusieurs entrées si le domaine diffère, liées par « ne-pas-confondre » (ex. ضعيف hadith / transmetteur) — cas réel de l'exigence 01 §3 et §5.
+2026-10-28 — Provenance d'une traduction : 4 valeurs stockées ; « original non traduit » est un état calculé à l'affichage — ce n'est pas une traduction.
+2026-10-28 — Traduction avec droits « inconnu » non affichée publiquement — choix prudent et réversible (02 §7).
+2026-10-28 — Translittération provisoire `provisoire-v0` : famille ALA-LC dans la forme des exemples de l'exigence 01, ʿ U+02BF / ʾ U+02BE, à soumettre à un spécialiste — convention déjà utilisée par le patron, changement ultérieur sans casse.
+2026-10-28 — Recherche : clé normalisée automatique (opérations sûres) + variantes saisies à la main ; texte stocké jamais modifié — trouver toutes les graphies sans faux rapprochements ni doublons (01 §10).
+2026-10-28 — [hypothèse analyste] H-01 : pas de détection de la langue du navigateur en V1, l'arabe s'ouvre toujours en premier (repris par le designer, sélecteur H1) — 02 §3, option la plus simple.
+2026-10-28 — [hypothèse analyste] H-02 : visiteur non connecté, préférence gardée dans le stockage local, sans cookie de suivi (designer : sinon pour la session seulement, sélecteur H5 / préférences H6) — mécanismes de stockage autorisés non définis.
+2026-10-28 — [hypothèse analyste] H-03 : rapport = langue d'interface ; recherche = arabe + langue d'interface, arabe toujours inclus — 02 §8. CONFLIT avec designer préférences H1 (rapport = arabe) : à trancher par le patron.
+2026-10-28 — [hypothèse analyste] H-05 : aucune variante régionale d'interface en V1, une version par langue — option la plus simple.
+2026-10-28 — [hypothèse analyste] H-06 : Ex.02 élargit Ex.01 ; définitions validables en fr et en en V1, les 6 autres langues affichent arabe + translittération + « traduction non validée » (repris designer affichage H5) — contradiction Ex.01 / Ex.02.
+2026-10-28 — [hypothèse analyste] H-07 : contrôles qualité touchant au sens scientifique (01 §10) non automatisés : l'agent signale, un humain tranche — pas automatisable de façon fiable.
+2026-10-28 — [hypothèse analyste] H-08 : aucune règle de normalisation par écriture écrite ; proposée par l'architecte, validée par un spécialiste — ne rien inventer.
+2026-10-28 — [hypothèse analyste] H-09 : rôles « gestionnaire de contenu » et « validateur » prévus, titulaires inconnus — besoin des exigences.
+2026-10-28 — [hypothèse analyste] H-10 : repli si traduction manquante : variante régionale → langue parente → anglais → arabe, marque visible — 02 §1 interdit de supposer que l'utilisateur lit l'arabe.
+2026-10-28 — [hypothèse analyste] H-11 : translittération à chaque première apparition (règle d'Ex.01, plus stricte qu'Ex.02 §6) — appliquer la règle la plus stricte.
+2026-10-28 — [hypothèse analyste] H-12 : cahier des charges placé dans docs/conception/ et non docs/projet/ — demande de Jarvis.
+2026-10-28 — [hypothèse designer] Sélecteur H2 : « العربية — Arabe » toujours épinglée en tête de liste — 02 §3, arabe immédiatement accessible.
+2026-10-28 — [hypothèse designer] Sélecteur H3 : seules les langues « Interface disponible » sont choisissables ; les autres grisées avec la raison — ne jamais faire croire à une prise en charge (03 §7).
+2026-10-28 — [hypothèse designer] Sélecteur H4 : langues expérimentales masquées par défaut (case pour les afficher), langues désactivées jamais affichées — éviter les choix trompeurs.
+2026-10-28 — [hypothèse designer] Sélecteur H6 : recherche de langue insensible aux majuscules et accents — confort de saisie, noms de langues seulement.
+2026-10-28 — [hypothèse designer] Sélecteur H7 : changement appliqué au clic, sans bouton Enregistrer — geste le plus court, réversible.
+2026-10-28 — [hypothèse designer] Préférences H1 : valeurs initiales interface, rapport et recherche = arabe — arabe langue par défaut (02 §1) ; voir conflit H-03.
+2026-10-28 — [hypothèse designer] Préférences H2 : arabe toujours inclus dans la recherche, non décochable, avec explication — 02 §8.
+2026-10-28 — [hypothèse designer] Préférences H3 : pas de lien automatique rapport/interface ; simple suggestion au premier changement d'interface — respecter l'indépendance des réglages.
+2026-10-28 — [hypothèse designer] Préférences H4 : bouton Enregistrer dans la page Paramètres ; application immédiate dans l'en-tête et les raccourcis — plusieurs champs à annuler vs geste court.
+2026-10-28 — [hypothèse designer] Préférences H5 : changer la langue du rapport vaut pour les prochains rapports ; action « Créer une version en … » pour le rapport ouvert — 02 §2, ne pas effacer le rapport ouvert.
+2026-10-28 — [hypothèse designer] Affichage H1 : trois formes de terme (complète, courte, compacte) — couvre 01 §8 avec le moins de variantes.
+2026-10-28 — [hypothèse designer] Affichage H2 : en forme compacte, arabe visible si la place le permet, sinon en infobulle ; définition toujours en infobulle — 01 §8.
+2026-10-28 — [hypothèse designer] Affichage H3 : infobulle au survol, au focus clavier et au toucher — mobile et clavier.
+2026-10-28 — [hypothèse designer] Affichage H4 : une « section » = un bloc avec son propre titre — 01 §1, première apparition par section.
+2026-10-28 — [hypothèse designer] Affichage H6 : original arabe d'abord, traduction ensuite ; option côte à côte sur grand écran — simple, l'original jamais caché.
+2026-10-28 — [hypothèse designer] Affichage H7 : traduction automatique provisoire non affichée d'office, un bouton la demande — 02 §7, option la plus prudente.
+2026-10-28 — [hypothèse designer] Affichage H8 : bloc original jamais repliable ni masquable — 02 §7 et 03 §9.
+2026-10-28 — [hypothèse designer] Rapport mixte H1 : direction gérée au niveau bloc et fragment — 02 §4.
+2026-10-28 — [hypothèse designer] Rapport mixte H2 : direction d'un bloc tirée de sa langue déclarée ; devinette seulement pour le texte saisi — plus fiable (02 §8).
+2026-10-28 — [hypothèse designer] Rapport mixte H3 : références gardées telles que dans la source ; dates et compteurs au format de la langue du rapport — 02 §8.
+2026-10-28 — [hypothèse designer] Rapport mixte H4 : URL toujours isolée, LTR, jamais traduite ni coupée — une URL inversée devient fausse.
+2026-10-28 — [hypothèse designer] Rapport mixte H5 : pas de bouton pour masquer les citations arabes — 02 §7, conserver l'original.
+2026-10-28 — [patron] Format d'affichage d'un terme technique : « Terme français (arabe — translittération) », ex. « Bon (حسن — ḥasan) ». Pas de définition dans le texte : elle va en infobulle / fiche terme. Remplace le format de l'exigence 01 §2 — choix du patron, plus lisible.
+2026-10-28 — [patron] Stack retenue : option A (Next.js + next-intl), cf. docs/conception/choix-stack.md — recommandation de l'architecte, la plus simple et réversible.
+2026-10-28 — [patron] Installation autorisée : next, react, react-dom, next-intl, zod, typescript, @types/react, @types/node, vitest, @playwright/test, polices Noto — validation explicite du patron.

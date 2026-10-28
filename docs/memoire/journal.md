@@ -1,1 +1,31 @@
 # Journal (une entrée datée par tâche, 3 lignes)
+
+## 2026-10-28
+- Fait : exigences HadithVerify AI enregistrées dans docs/exigences/ (01 terminologie, 02 multilingue, 03 couverture mondiale).
+- Reste : 47 tâches dans docs/memoire/taches.md (13 conception, 31 code/tests/doc, 3 [!] : choix de la stack, spécialiste hadith, relecteurs de traductions).
+- Prochaine étape : autopilote lancé.
+
+## 2026-10-28 — Questions ouvertes pour le patron
+- Fait : 12 questions classées par blocage dans docs/conception/questions-patron.md (verdict d'authenticité V1, source des textes arabes, budget, technologies, moteur d'IA, hébergement, comptes, droits des traductions, traduction auto, spécialistes/translittération, relecteurs, langues au lancement).
+- Reste : réponses du patron.
+- Prochaine étape : le patron répond, à commencer par les questions bloquantes.
+
+## 2026-10-28 — Options de stack
+- Fait : docs/conception/choix-stack.md : A Next.js + next-intl (recommandée, à valider), B Vite/React + react-i18next + Fastify, C Vite/React + FastAPI ; données langues et termes en JSON, quelle que soit l'option.
+- Reste : choix du patron ; rien installé.
+- Prochaine étape : validation de l'option par le patron, puis installation.
+
+## 2026-10-28 — Cahier des charges multilingue
+- Fait : docs/conception/cahier-des-charges-langues.md : 63 exigences EX-01..EX-63, 12 critères d'acceptation reliés, 12 hypothèses (section 6).
+- Reste : confirmation des hypothèses par le patron.
+- Prochaine étape : parcours UX.
+
+## 2026-10-28 — Parcours UX
+- Fait : 4 fichiers dans docs/conception/ux/ (sélecteur de langue, 3 préférences, affichage termes/traductions, rapport mixte) ; espaces réservés, aucune définition inventée.
+- Reste : contenus réels (définitions, traductions) à fournir par les spécialistes.
+- Prochaine étape : modèles de données.
+
+## 2026-10-28 — Modèles de données
+- Fait : 4 fichiers dans docs/conception/donnees/ (langue, terme, texte/traduction, translittération provisoire ALA-LC à soumettre à un spécialiste) ; 11 décisions notées.
+- Reste : toutes les tâches de code marquées [!], elles attendent le choix de la stack.
+- Prochaine étape : le patron choisit la stack.
